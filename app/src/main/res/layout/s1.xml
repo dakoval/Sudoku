@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#000000"
+    tools:context="max.sudoku.MainActivity">
+
+
+    <Button
+        android:id="@+id/s1play"
+        android:layout_width="216dp"
+        android:layout_height="84dp"
+        android:layout_x="115dp"
+        android:layout_y="400dp"
+        android:background="@android:color/holo_green_light"
+        android:elevation="0dp"
+        android:text="Play Game"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="304dp"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="31dp"
+        android:layout_y="295dp"
+        android:fontFamily="casual"
+        android:text="The Extraordinary Sudoku Solver"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="187dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="128dp"
+        android:layout_y="114dp"
+        android:fontFamily="casual"
+        android:text="TESS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/s1solve"
+        android:layout_width="216dp"
+        android:layout_height="84dp"
+        android:layout_x="106dp"
+        android:layout_y="518dp"
+        android:background="@android:color/holo_green_light"
+        android:elevation="0dp"
+        android:text="Solver"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="479dp"
+        android:layout_marginTop="130dp"
+        android:layout_alignTop="@+id/s1play"
+        android:layout_alignStart="@+id/s1play" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_x="117dp"
+        android:layout_y="660dp"
+        android:text="Created By David Koval And Joseph Mammo"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="694dp" />
+</RelativeLayout>

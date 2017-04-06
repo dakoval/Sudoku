@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="max.sudoku.MainActivity"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/x00"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/x10"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/x20"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/x30"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/x40"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/x50"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/x60"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/x70"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/x80"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25pt">
+
+        <Button
+            android:id="@+id/x01"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x11"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x21"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x31"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x41"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x51"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x61"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x71"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x81"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50pt">
+
+        <Button
+            android:id="@+id/x02"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x12"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x22"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x32"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x42"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x52"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x62"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x72"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x82"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="75pt">
+
+        <Button
+            android:id="@+id/x03"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x13"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x23"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x33"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x43"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x53"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x63"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x73"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x83"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100pt">
+
+        <Button
+            android:id="@+id/x04"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x14"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x24"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x34"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x44"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x54"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x64"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x74"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x84"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="125pt">
+
+        <Button
+            android:id="@+id/x05"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x15"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x25"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x35"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x45"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x55"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x65"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x75"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x85"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150pt">
+
+        <Button
+            android:id="@+id/x06"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x16"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x26"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x36"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x46"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x56"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x66"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:textColor="#00ff11"
+            android:id="@+id/x76"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x86"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="175pt">
+
+        <Button
+            android:id="@+id/x07"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x17"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x27"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x37"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x47"
+            android:layout_width="18pt"
+            android:textColor="#00ff11"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x57"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x67"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x77"
+            android:layout_width="18pt"
+            android:textColor="#00ff11"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x87"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="200pt">
+
+        <Button
+            android:id="@+id/x08"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="#00ff11"/>
+
+        <Button
+            android:id="@+id/x18"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x28"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x38"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x48"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x58"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x68"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x78"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/x88"
+            android:textColor="#00ff11"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="250pt">
+
+        <Button
+        android:id="@+id/x1"
+        android:layout_width="18pt"
+        android:layout_height="18pt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/back"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#00ff11"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+        <Button
+            android:id="@+id/x2"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/x3"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/x4"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/x5"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/x6"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="6"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/x7"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/x8"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="8"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/x9"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="9"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="275pt">
+        <Button
+            android:id="@+id/xhint"
+            android:layout_width="35pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="hint"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+        android:id="@+id/xcheck"
+        android:layout_width="45pt"
+        android:layout_height="18pt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/back"
+        android:text="check"
+        android:textAlignment="center"
+        android:textColor="#00ff11"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+        <Button
+            android:id="@+id/xsolve"
+            android:layout_width="45pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="solve"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/xdel"
+            android:layout_width="45pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
