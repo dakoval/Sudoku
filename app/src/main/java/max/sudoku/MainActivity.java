@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
         //TODO retrieve from database
         //TODO allow user to pick a puzzle on each level
-        String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000009";
+        String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000001";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
         }
@@ -372,13 +372,13 @@ public class MainActivity extends AppCompatActivity {
                 stopListener();
                 getValues();
                 xsolve.setBackgroundColor(Color.BLUE);
-                Log.d("Starting","--------------------------------------------------------------");
+                //Log.d("Starting","--------------------------------------------------------------");
                 loops=0;
                 if(solveRecur(0,0)){
                     writeToScreen();
                 }else{
                     clearScreen();
-                    String s = "Sudoku Puzzle Can't Be Solved Because It Is Invalid.";
+                    String s = "Given Sudoku Puzzle Could Not Be Solved.";
                     int at =0;
                     outerLoop:
                     for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -394,6 +394,7 @@ public class MainActivity extends AppCompatActivity {
                 startListener();
             }
         });
+        xhint.setBackgroundColor(Color.GRAY);//TODO Remove once hint is done
         xhint.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -501,8 +502,8 @@ public class MainActivity extends AppCompatActivity {
 
     boolean solveRecur(int x, int y){
         loops++;
-        //if(loops>150000)return false;
-       // Log.d("Recur","In the loop  "+loops);
+        if(loops>250000)return false;
+       //Log.d("Recur","In the loop  "+loops);
         int v = gridVal[x][y],nx=x+1,ny=y;
         if(nx>8){
             ny++;
