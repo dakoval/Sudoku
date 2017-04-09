@@ -9,7 +9,7 @@ import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
-    static int dif,i,j;
+    static int dif,i,j,loops;
     static Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
     static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,b=null;
     static Button[][] grid = new Button[9][9];
@@ -103,7 +103,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void retrievePuzzle(){
+
         //TODO retrieve from database
+        //TODO allow user to pick a puzzle on each level
         String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000009";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
@@ -371,6 +373,7 @@ public class MainActivity extends AppCompatActivity {
                 getValues();
                 xsolve.setBackgroundColor(Color.BLUE);
                 Log.d("Starting","--------------------------------------------------------------");
+                loops=0;
                 if(solveRecur(0,0)){
                     writeToScreen();
                 }else{
@@ -497,7 +500,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     boolean solveRecur(int x, int y){
-        Log.d("Recur","In the loop");
+        loops++;
+        //if(loops>150000)return false;
+       // Log.d("Recur","In the loop  "+loops);
         int v = gridVal[x][y],nx=x+1,ny=y;
         if(nx>8){
             ny++;

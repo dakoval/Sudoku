@@ -19,12 +19,9 @@
             android:id="@+id/x00"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp"
@@ -34,12 +31,9 @@
             android:id="@+id/x10"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -48,12 +42,9 @@
             android:id="@+id/x20"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -62,12 +53,9 @@
             android:id="@+id/x30"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -76,12 +64,9 @@
             android:id="@+id/x40"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -90,12 +75,9 @@
             android:id="@+id/x50"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -104,12 +86,9 @@
             android:id="@+id/x60"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -118,12 +97,9 @@
             android:id="@+id/x70"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -132,12 +108,9 @@
             android:id="@+id/x80"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
@@ -154,12 +127,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -168,12 +138,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -182,12 +149,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -196,12 +160,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -210,12 +171,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -224,12 +182,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -238,12 +193,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -252,12 +204,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -266,12 +215,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
     </LinearLayout>
@@ -286,12 +232,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -300,12 +243,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -314,12 +254,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -328,12 +265,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -342,12 +276,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -356,13 +287,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -370,12 +298,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -384,12 +309,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -398,12 +320,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
     </LinearLayout>
@@ -418,12 +337,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -432,12 +348,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -446,12 +359,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -460,12 +370,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -474,13 +381,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -488,13 +392,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -502,12 +403,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -516,13 +414,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -530,12 +425,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
     </LinearLayout>
@@ -550,12 +442,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -564,13 +453,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -578,13 +464,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -592,13 +475,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -606,13 +486,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:textSize="18sp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -620,13 +497,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -634,13 +508,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -648,12 +519,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -662,12 +530,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
     </LinearLayout>
@@ -682,12 +547,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -696,12 +558,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -710,12 +569,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -724,12 +580,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -738,12 +591,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -752,13 +602,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -766,12 +613,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -780,12 +624,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -794,12 +635,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
     </LinearLayout>
@@ -814,13 +652,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -828,12 +663,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -842,12 +674,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -856,13 +685,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -870,12 +696,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -884,12 +707,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -898,12 +718,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -912,12 +729,9 @@
             android:id="@+id/x76"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -926,13 +740,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
     </LinearLayout>
     <LinearLayout
@@ -946,13 +757,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -960,13 +768,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -974,13 +779,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -988,13 +790,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -1002,13 +801,10 @@
             android:layout_width="18pt"
             android:textColor="#00ff11"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -1016,13 +812,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -1030,12 +823,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -1044,12 +834,9 @@
             android:layout_width="18pt"
             android:textColor="#00ff11"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -1058,13 +845,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
     </LinearLayout>
 
@@ -1078,12 +862,9 @@
             android:id="@+id/x08"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center"
             android:textColor="#00ff11"/>
@@ -1093,12 +874,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -1107,13 +885,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -1121,13 +896,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -1135,12 +907,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -1149,13 +918,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
         <Button
@@ -1163,12 +929,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -1177,12 +940,9 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:inputType="number"
             android:textSize="18sp"
             android:textAlignment="center" />
 
@@ -1191,13 +951,10 @@
             android:textColor="#00ff11"
             android:layout_width="18pt"
             android:layout_height="18pt"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
             android:textSize="18sp"
-            android:inputType="number"
             android:textAlignment="center" />
 
     </LinearLayout>
@@ -1208,17 +965,17 @@
         android:paddingLeft="10dp">
 
         <Button
-        android:id="@+id/x1"
-        android:layout_width="18pt"
-        android:layout_height="18pt"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="13dp"
-        android:background="@drawable/back"
-        android:text="1"
-        android:textAlignment="center"
-        android:textColor="#00ff11"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+            android:id="@+id/x1"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
         <Button
             android:id="@+id/x2"
             android:layout_width="18pt"
@@ -1336,17 +1093,17 @@
             android:textSize="30sp"
             android:textStyle="bold" />
         <Button
-        android:id="@+id/xcheck"
-        android:layout_width="45pt"
-        android:layout_height="18pt"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="13dp"
-        android:background="@drawable/back"
-        android:text="check"
-        android:textAlignment="center"
-        android:textColor="#00ff11"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+            android:id="@+id/xcheck"
+            android:layout_width="45pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/back"
+            android:text="check"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
         <Button
             android:id="@+id/xsolve"
             android:layout_width="45pt"
