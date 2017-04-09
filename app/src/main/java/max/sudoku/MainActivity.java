@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     static int dif,i,j;
     static Button s1play, s1solve, d1,d2,d3,d4,d5;
     static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,b=null;
-    static Button x00,x01,x02,x03,x04,x05,x06,x07,x08,x10,x11,x12,x13,x14,x15,x16,x17,x18,x20,x21,x22,x23,x24,x25,x26,x27,x28,x30,x31,x32,x33,x34,x35,x36,x37,x38,x40,x41,x42,x43,x44,x45,x46,x47,x48,x50,x51,x52,x53,x54,x55,x56,x57,x58,x60,x61,x62,x63,x64,x65,x66,x67,x68,x70,x71,x72,x73,x74,x75,x76,x77,x78,x80,x81,x82,x83,x84,x85,x86,x87,x88;
+    //static Button x00,x01,x02,x03,x04,x05,x06,x07,x08,x10,x11,x12,x13,x14,x15,x16,x17,x18,x20,x21,x22,x23,x24,x25,x26,x27,x28,x30,x31,x32,x33,x34,x35,x36,x37,x38,x40,x41,x42,x43,x44,x45,x46,x47,x48,x50,x51,x52,x53,x54,x55,x56,x57,x58,x60,x61,x62,x63,x64,x65,x66,x67,x68,x70,x71,x72,x73,x74,x75,x76,x77,x78,x80,x81,x82,x83,x84,x85,x86,x87,x88;
     static Button[][] grid = new Button[9][9];
     static int[][] gridVal = new int[9][9];
     @Override
@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
         xdel.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                b.setText(" ");
+                b.setText("");
                 startListener();
             }
         });
@@ -328,13 +328,33 @@ public class MainActivity extends AppCompatActivity {
         xsolve.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //TODO
+                b=null;
+                stopListenerOptions();
+                stopListener();
+                getValues();
+                xsolve.setBackgroundColor(Color.BLUE);
+                Log.d("Starting","--------------------------------------------------------------");
+                if(solveRecur(0,0)){
+                    for(int i=0;i<9;i++)for(int j=0;j<9;j++){
+                        final Button btn = grid[i][j];
+                        if(gridVal[i][j]!=0)btn.setText(gridVal[i][j]+"");
+                    }
+                    xsolve.setBackgroundColor(Color.BLACK);
+                }else{//TODO print unsolvable
+                    for(int i=0;i<9;i++)for(int j=0;j<9;j++){
+                        final Button btn = grid[i][j];
+                        if(gridVal[i][j]!=0)btn.setText(gridVal[i][j]+"");
+                    }
+                    xsolve.setBackgroundColor(Color.RED);
+                }
+                startListenerOptions();
+                startListener();
             }
         });
         xhint.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-            //TODO
+            //TODO hint button
             }
         });
     }
@@ -405,6 +425,55 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    boolean solveRecurCheck(int x,int y,int v){
+        //horizontal
+        for(int i=0;i<9;i++){
+            if(x!=i && v==gridVal[i][y]){
+                return false;
+            }
+        }
+        //vertical
+        for(int i=0;i<9;i++){
+            if(y!=i && v==gridVal[x][i]){
+                return false;
+            }
+        }
+        //box
+        for(int i=(x/3)*3;i<(x/3)*3+3;i++)for(int j=(y/3)*3;j<(y/3)*3+3;j++){//Log.d("Box","For x:"+i+", y:"+j+",  "+v);
+            if(!(i==x && j==y) && v==gridVal[i][j]){//Log.d("check","b false");
+                return false;
+            }
+        }
+        return true;
+    }
+
+    boolean solveRecur(int x, int y){
+        Log.d("Recur","In the loop");
+        int v = gridVal[x][y],nx=x+1,ny=y;
+        if(nx>8){
+            ny++;
+            nx=0;
+        }
+        if(v!=0){
+            if(solveRecurCheck(x,y,v)){
+                if(x==8 && y==8)return true;
+                return solveRecur(nx,ny);
+            }else return false;
+        }
+        //Log.d("Recur","try random");
+        for(int i=1;i<10;i++){
+            //Log.d("Try","For x:"+x+", y:"+y+",  "+i);
+            gridVal[x][y]=i;
+            if(solveRecurCheck(x,y,i)){
+                //Log.d("Use","For x:"+x+", y:"+y+",  i");
+                if(x==8 && y==8)return true;
+                if(solveRecur(nx,ny))return true;
+            }
+        }
+        gridVal[x][y]=0;
+        return false;
     }
 
 
