@@ -1190,6 +1190,7 @@
             android:textSize="18sp"
             android:inputType="number"
             android:textAlignment="center" />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -1308,7 +1309,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="275pt">
+        android:paddingTop="275pt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
         <Button
             android:id="@+id/xhint"
             android:layout_width="35pt"
@@ -1345,14 +1349,29 @@
             android:textColor="#00ff11"
             android:textSize="30sp"
             android:textStyle="bold" />
+
         <Button
             android:id="@+id/xdel"
-            android:layout_width="45pt"
+            android:layout_width="wrap_content"
             android:layout_height="18pt"
             android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/back"
-            android:text="Delete"
+            android:text="Del"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/xclear"
+            android:layout_width="18pt"
+            android:layout_height="18pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:text="C"
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="30sp"

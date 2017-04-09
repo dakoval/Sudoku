@@ -10,31 +10,28 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     static int dif,i,j;
-    static Button s1play, s1solve, d1,d2,d3,d4,d5;
-    static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,b=null;
-    //static Button x00,x01,x02,x03,x04,x05,x06,x07,x08,x10,x11,x12,x13,x14,x15,x16,x17,x18,x20,x21,x22,x23,x24,x25,x26,x27,x28,x30,x31,x32,x33,x34,x35,x36,x37,x38,x40,x41,x42,x43,x44,x45,x46,x47,x48,x50,x51,x52,x53,x54,x55,x56,x57,x58,x60,x61,x62,x63,x64,x65,x66,x67,x68,x70,x71,x72,x73,x74,x75,x76,x77,x78,x80,x81,x82,x83,x84,x85,x86,x87,x88;
+    static Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
+    static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,b=null;
     static Button[][] grid = new Button[9][9];
     static int[][] gridVal = new int[9][9];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        s1Listener();
+    }
+    void s1Listener(){
         setContentView(R.layout.s1);
-
         s1play = (Button) findViewById(R.id.s1play);
         s1solve = (Button) findViewById(R.id.s1solve);
-
-
         s1play.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 setContentView(R.layout.s2);
-                d1 = (Button) findViewById(R.id.d1);
-                d2 = (Button) findViewById(R.id.d2);
-                d3 = (Button) findViewById(R.id.d3);
-                d4 = (Button) findViewById(R.id.d4);
-                d5 = (Button) findViewById(R.id.d5);
+
+
                 difficultyListener();
-        }
+                backToS1Listener();
+            }
         });
         s1solve.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -44,38 +41,78 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    static void difficultyListener(){
+
+    void difficultyListener(){
+        d1 = (Button) findViewById(R.id.d1);
+        d2 = (Button) findViewById(R.id.d2);
+        d3 = (Button) findViewById(R.id.d3);
+        d4 = (Button) findViewById(R.id.d4);
+        d5 = (Button) findViewById(R.id.d5);
         d1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=1;
+                retrievePuzzle();
             }
         });
         d2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=2;
+                retrievePuzzle();
             }
         });
         d3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=3;
+                retrievePuzzle();
             }
         });
         d4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=4;
+                retrievePuzzle();
             }
         });
         d5.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=5;
+                retrievePuzzle();
             }
         });
     }
+
+    void backToS1Listener(){
+        xback_s2 = (Button) findViewById(R.id.xback_s2);
+        xback_s2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                s1play.setOnClickListener(null);
+                s1solve.setOnClickListener(null);
+                d1.setOnClickListener(null);
+                d2.setOnClickListener(null);
+                d3.setOnClickListener(null);
+                d4.setOnClickListener(null);
+                d5.setOnClickListener(null);
+                s1Listener();
+            }
+        });
+    }
+
+    void retrievePuzzle(){
+        //TODO retrieve from database
+        String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000009";
+        for(int i=0;i<9;i++)for(int j=0;j<9;j++){
+            gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
+        }
+        setContentView(R.layout.s3);
+        boardListener();
+        writeToScreen();
+    }
+
     void boardListener(){
 
         grid[0][0] = (Button) findViewById(R.id.x00);
@@ -176,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
         x8 = (Button) findViewById(R.id.x8);
         x9 = (Button) findViewById(R.id.x9);
         xdel = (Button) findViewById(R.id.xdel);
-
+        xclear = (Button) findViewById(R.id.xclear);
 
         startListener();
         startListenerOptions();
@@ -302,7 +339,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void stopListener(){
-        for(i=0;i<9;i++)for(j=0;j<9;j++){
+        for(i=0;i<9;i++)for(j=0;j<9;j++) {
             final Button btn = grid[i][j];
             btn.setOnClickListener(null);
         }
@@ -335,18 +372,21 @@ public class MainActivity extends AppCompatActivity {
                 xsolve.setBackgroundColor(Color.BLUE);
                 Log.d("Starting","--------------------------------------------------------------");
                 if(solveRecur(0,0)){
+                    writeToScreen();
+                }else{
+                    clearScreen();
+                    String s = "Sudoku Puzzle Can't Be Solved Because It Is Invalid.";
+                    int at =0;
+                    outerLoop:
                     for(int i=0;i<9;i++)for(int j=0;j<9;j++){
-                        final Button btn = grid[i][j];
-                        if(gridVal[i][j]!=0)btn.setText(gridVal[i][j]+"");
+                        final Button btn = grid[j][i];
+                        if(s.length()-1<at)break outerLoop;
+                        else if(s.charAt(at)==' ')j=9;
+                        else btn.setText(s.charAt(at)+"");
+                        at++;
                     }
-                    xsolve.setBackgroundColor(Color.BLACK);
-                }else{//TODO print unsolvable
-                    for(int i=0;i<9;i++)for(int j=0;j<9;j++){
-                        final Button btn = grid[i][j];
-                        if(gridVal[i][j]!=0)btn.setText(gridVal[i][j]+"");
-                    }
-                    xsolve.setBackgroundColor(Color.RED);
                 }
+                xsolve.setBackgroundResource(R.drawable.back);
                 startListenerOptions();
                 startListener();
             }
@@ -357,11 +397,18 @@ public class MainActivity extends AppCompatActivity {
             //TODO hint button
             }
         });
+        xclear.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                clearScreen();
+            }
+        });
     }
     void stopListenerOptions(){
         xcheck.setOnClickListener(null);
         xsolve.setOnClickListener(null);
         xhint.setOnClickListener(null);
+        xclear.setOnClickListener(null);
     }
 
     void getValues(){
@@ -476,11 +523,18 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-
-    //Todo: retrieve from database
-    static void getPuzzlesByDifficulty(int d){
-        String link = "http://localhost.org/phpmyadmin/db_structure.php?server=1&db=sudoku";
+    void writeToScreen(){
+        for(int i=0;i<9;i++)for(int j=0;j<9;j++){
+            final Button btn = grid[i][j];
+            if(gridVal[i][j]!=0)btn.setText(gridVal[i][j]+"");
+            else btn.setText("");
+        }
     }
-
-
+    void clearScreen(){
+        for(int i=0;i<9;i++)for(int j=0;j<9;j++){
+            final Button btn = grid[i][j];
+            btn.setText("");
+            gridVal[i][j]=0;
+        }
+    }
 }

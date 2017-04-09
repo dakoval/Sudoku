@@ -130,4 +130,16 @@
         tools:layout_editor_absoluteX="122dp"
         tools:layout_editor_absoluteY="694dp" />
 
+    <Button
+        android:id="@+id/xback_s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back"
+        android:text="Back"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp" />
+
 </RelativeLayout>
