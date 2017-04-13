@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.view.View;
-
 import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,xquit,b=null;
     static Button[][] grid = new Button[9][9];
     static int[][] gridVal = new int[9][9];
+    static boolean solved = false;
     DatastoreFactory.DatastoreFactoryDbHelper mDbHelper = new DatastoreFactory.DatastoreFactoryDbHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     void databaseCheck(){
         File database=getApplicationContext().getDatabasePath("TESS.db");
         if (!database.exists()) {
-            database_save("0","000000000000000000000000000000000000000000000000000000000000000000000000000000000");
+            database_save("0","000000000000000000000000000000000000000000000000000000000000000000000000000000000"); // Initialize save state
             database_save("1","010020300004005060070000008006900070000100002030048000500006040000800106008000000"); // level 1 data
             database_save("2","000427000060090080000000000900000008120030045500000007000000000040060030000715000"); // level 2 data
             database_save("3","000398000050010060000000000800000009120030045700000008000000000040020010000769000"); // level 3 data
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         values.put(DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD, board);
 
         // Which row to update, based on the title
-        String selection = DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD + " LIKE ?";
+        String selection = DatastoreFactory.FeedEntry.COLUMN_NAME_LEVEL + " LIKE ?";
         String[] selectionArgs = { level };
 
         int count = db.update(
@@ -470,8 +470,10 @@ public class MainActivity extends AppCompatActivity {
             //Log.w("Grid Val: ", p +"");
         }
         Log.w("StringVal:", temp);
-        //database_save("0", temp);
-        database_update("0",temp);
+        if(!solved){
+            database_update("0",temp);
+        }
+
     }
 
     void startListenerOptions(){
@@ -527,6 +529,7 @@ public class MainActivity extends AppCompatActivity {
                         at++;
                     }
                 }
+                solved = true;
                 xsolve.setBackgroundResource(R.drawable.back);
                 startListenerOptions();
                 startListener();
