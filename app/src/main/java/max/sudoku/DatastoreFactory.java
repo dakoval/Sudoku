@@ -10,11 +10,8 @@ import android.provider.BaseColumns;
  */
 
 public final class DatastoreFactory {
-    // To prevent someone from accidentally instantiating the contract class,
-    // make the constructor private.
     private DatastoreFactory() {}
 
-    /* Inner class that defines the table contents */
     public static class FeedEntry implements BaseColumns {
         public static final String TABLE_NAME = "Sudoku";
         public static final String COLUMN_NAME_LEVEL = "level";
@@ -42,8 +39,6 @@ public final class DatastoreFactory {
             db.execSQL(SQL_CREATE_ENTRIES);
         }
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-            // This database is only a cache for online data, so its upgrade policy is
-            // to simply to discard the data and start over
             db.execSQL(SQL_DELETE_ENTRIES);
             onCreate(db);
         }
