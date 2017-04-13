@@ -141,12 +141,12 @@
         android:text="Back"
         android:textColor="@android:color/holo_green_light"
         android:textSize="24sp"
-        android:layout_alignBaseline="@+id/button"
-        android:layout_alignBottom="@+id/button"
+        android:layout_alignBaseline="@+id/xcontinue"
+        android:layout_alignBottom="@+id/xcontinue"
         android:layout_toStartOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/xcontinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_light"

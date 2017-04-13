@@ -15,7 +15,7 @@ import java.io.File;
 public class MainActivity extends AppCompatActivity {
     static int dif,i,j,loops;
     static Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
-    static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,xquit,b=null;
+    static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,xquit,xcontinue,b=null;
     static Button[][] grid = new Button[9][9];
     static int[][] gridVal = new int[9][9];
     static boolean solved = false;
@@ -122,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
                 difficultyListener();
                 backToS1Listener();
+                continueListner();
             }
         });
         s1solve.setOnClickListener(new View.OnClickListener(){
@@ -192,14 +193,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    void continueListner(){
 
+        xcontinue = (Button) findViewById(R.id.xcontinue);
+        xcontinue.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String val = database_retrieve("0");
+                if(val.equals("000000000000000000000000000000000000000000000000000000000000000000000000000000000")){
+                    xcontinue.setClickable(false);
+                }else{
+                    xcontinue.setClickable(true);
+                    retrievePuzzle(0);
+                }
+
+            }
+        });
+    }
     void retrievePuzzle(int n){
         //TODO: randomly pull up puzzles from the database
         String board = null;
         switch(n){
+            case 0:
+                board = database_retrieve("0");
+                break;
             case 1:
                 board = database_retrieve("1");
-
                 break;
             case 2:
                 board = database_retrieve("2");
@@ -329,6 +348,7 @@ public class MainActivity extends AppCompatActivity {
         xdel = (Button) findViewById(R.id.xdel);
         xclear = (Button) findViewById(R.id.xclear);
         xquit = (Button) findViewById(R.id.xquit);
+
         startListener();
         startListenerOptions();
 
@@ -501,6 +521,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         xsolve.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -535,11 +556,14 @@ public class MainActivity extends AppCompatActivity {
                 startListener();
             }
         });
+        /*
+
+*/
         xhint.setBackgroundColor(Color.GRAY);//TODO Remove once hint is done
         xhint.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-            //TODO hint button
+
             }
         });
         xclear.setOnClickListener(new View.OnClickListener(){
