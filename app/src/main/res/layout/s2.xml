@@ -137,12 +137,22 @@
         android:id="@+id/xback_s2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignParentStart="true"
         android:background="@drawable/back"
         android:text="Back"
         android:textColor="@android:color/holo_green_light"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:text="Continue"
+        android:textSize="14sp"
+        android:layout_alignTop="@+id/d5"
+        android:layout_toEndOf="@+id/d1" />
 
 </RelativeLayout>
