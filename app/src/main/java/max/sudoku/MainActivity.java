@@ -11,6 +11,8 @@ import android.util.Log;
 import android.widget.Button;
 import android.view.View;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
     static int dif,i,j,loops;
     static Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
@@ -22,10 +24,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         s1Listener();
-       // database_save("2","000427000060090080000000000900000008120030045500000007000000000040060030000715000");
-        //database_retrieve();
+        databaseCheck(); // check if TESS.db exists. If not, save the values for easier lookup.
     }
 
+    void databaseCheck(){
+        File database=getApplicationContext().getDatabasePath("TESS.db");
+        if (!database.exists()) {
+            database_save("1","010020300004005060070000008006900070000100002030048000500006040000800106008000000"); // level 1 data
+            database_save("2","000427000060090080000000000900000008120030045500000007000000000040060030000715000"); // level 2 data
+            database_save("3","000398000050010060000000000800000009120030045700000008000000000040020010000769000"); // level 3 data
+            database_save("4","102004070000902800009003004000240006000107000400068000200800700007501000080400109"); // level 4 data
+            database_save("5","002008050000040070480072000008000031600080005570000600000960048090020000030800900"); // level 5 data
+            Log.i("Database", "Not Found: adding board data now. ");
+        } else {
+            Log.i("Database", "Found, yay!");
+        }
+    }
     void database_save(String level, String board){
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
 
@@ -34,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         values.put(DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD, board);
 
         long newRowId = db.insert(DatastoreFactory.FeedEntry.TABLE_NAME, null, values);
-        Log.w("Save","-YES-");
+        Log.w("Database","-SAVING-");
 
     }
     private String database_retrieve(String level){
@@ -76,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         //TODO: randomly select board values (rand (0, cursor.size))
         return data;
     }
+
     void s1Listener(){
         setContentView(R.layout.s1);
         s1play = (Button) findViewById(R.id.s1play);
@@ -164,23 +179,18 @@ public class MainActivity extends AppCompatActivity {
         String board = null;
         switch(n){
             case 1:
-                //board = "010020300004005060070000008006900070000100002030048000500006040000800106008000000";
                 board = database_retrieve("1");
                 break;
             case 2:
-                //board = "010020300004005060070000008006900070000100002030048000500006040000800106008000000";
                 board = database_retrieve("2");
                 break;
             case 3:
-               // board = "000398000050010060000000000800000009120030045700000008000000000040020010000769000";
                 board = database_retrieve("3");
                 break;
             case 4:
-                //board = "102004070000902800009003004000240006000107000400068000200800700007501000080400109";
                 board = database_retrieve("4");
                 break;
             case 5:
-                //board = "002008050000040070480072000008000031600080005570000600000960048090020000030800900";
                 board = database_retrieve("5");
                 break;
             default:
@@ -298,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
         x9 = (Button) findViewById(R.id.x9);
         xdel = (Button) findViewById(R.id.xdel);
         xclear = (Button) findViewById(R.id.xclear);
-
+      //  xquit = (Button) findViewById(R.id.xquit);
         startListener();
         startListenerOptions();
 
