@@ -31,16 +31,17 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
         android:layout_x="31dp"
         android:layout_y="295dp"
         android:fontFamily="casual"
         android:text="The Extraordinary Sudoku Solver"
+        android:textAlignment="center"
         android:textColor="@android:color/holo_green_light"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="187dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        tools:layout_editor_absoluteY="187dp" />
 
     <TextView
         android:id="@+id/textView"

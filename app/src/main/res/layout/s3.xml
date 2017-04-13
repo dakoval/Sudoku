@@ -13,14 +13,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp">
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp">
 
         <Button
             android:id="@+id/x00"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -29,10 +30,10 @@
 
         <Button
             android:id="@+id/x10"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -40,10 +41,10 @@
 
         <Button
             android:id="@+id/x20"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -51,10 +52,10 @@
 
         <Button
             android:id="@+id/x30"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -62,10 +63,10 @@
 
         <Button
             android:id="@+id/x40"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -73,10 +74,10 @@
 
         <Button
             android:id="@+id/x50"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -84,10 +85,10 @@
 
         <Button
             android:id="@+id/x60"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -95,10 +96,10 @@
 
         <Button
             android:id="@+id/x70"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -106,10 +107,10 @@
 
         <Button
             android:id="@+id/x80"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textAlignment="center"
             android:textColor="#00ff11"
@@ -125,10 +126,10 @@
         <Button
             android:id="@+id/x01"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -136,10 +137,10 @@
         <Button
             android:id="@+id/x11"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -147,10 +148,10 @@
         <Button
             android:id="@+id/x21"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -158,10 +159,10 @@
         <Button
             android:id="@+id/x31"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -169,10 +170,10 @@
         <Button
             android:id="@+id/x41"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -180,10 +181,10 @@
         <Button
             android:id="@+id/x51"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -191,10 +192,10 @@
         <Button
             android:id="@+id/x61"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -202,10 +203,10 @@
         <Button
             android:id="@+id/x71"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -213,10 +214,10 @@
         <Button
             android:id="@+id/x81"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -224,16 +225,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="50pt"
+        android:paddingTop="47pt"
         android:paddingLeft="10dp">
 
         <Button
             android:id="@+id/x02"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -241,10 +242,10 @@
         <Button
             android:id="@+id/x12"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -252,10 +253,10 @@
         <Button
             android:id="@+id/x22"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -263,10 +264,10 @@
         <Button
             android:id="@+id/x32"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -274,10 +275,10 @@
         <Button
             android:id="@+id/x42"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -285,10 +286,10 @@
         <Button
             android:id="@+id/x52"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -296,10 +297,10 @@
         <Button
             android:id="@+id/x62"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -307,10 +308,10 @@
         <Button
             android:id="@+id/x72"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -318,10 +319,10 @@
         <Button
             android:id="@+id/x82"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -335,10 +336,10 @@
         <Button
             android:id="@+id/x03"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -346,10 +347,10 @@
         <Button
             android:id="@+id/x13"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -357,10 +358,10 @@
         <Button
             android:id="@+id/x23"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -368,10 +369,10 @@
         <Button
             android:id="@+id/x33"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -379,10 +380,10 @@
         <Button
             android:id="@+id/x43"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -390,10 +391,10 @@
         <Button
             android:id="@+id/x53"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -401,10 +402,10 @@
         <Button
             android:id="@+id/x63"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -412,10 +413,10 @@
         <Button
             android:id="@+id/x73"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -423,10 +424,10 @@
         <Button
             android:id="@+id/x83"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -440,10 +441,10 @@
         <Button
             android:id="@+id/x04"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -451,10 +452,10 @@
         <Button
             android:id="@+id/x14"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -462,10 +463,10 @@
         <Button
             android:id="@+id/x24"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -473,10 +474,10 @@
         <Button
             android:id="@+id/x34"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -484,21 +485,21 @@
         <Button
             android:id="@+id/x44"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
             android:textSize="18sp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textAlignment="center" />
 
         <Button
             android:id="@+id/x54"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -506,10 +507,10 @@
         <Button
             android:id="@+id/x64"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -517,10 +518,10 @@
         <Button
             android:id="@+id/x74"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -528,10 +529,10 @@
         <Button
             android:id="@+id/x84"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -539,16 +540,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="125pt"
+        android:paddingTop="123pt"
         android:paddingLeft="10dp">
 
         <Button
             android:id="@+id/x05"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -556,10 +557,10 @@
         <Button
             android:id="@+id/x15"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -567,10 +568,10 @@
         <Button
             android:id="@+id/x25"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -578,10 +579,10 @@
         <Button
             android:id="@+id/x35"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -589,10 +590,10 @@
         <Button
             android:id="@+id/x45"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -600,10 +601,10 @@
         <Button
             android:id="@+id/x55"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -611,10 +612,10 @@
         <Button
             android:id="@+id/x65"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -622,10 +623,10 @@
         <Button
             android:id="@+id/x75"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -633,10 +634,10 @@
         <Button
             android:id="@+id/x85"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -650,10 +651,10 @@
         <Button
             android:id="@+id/x06"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -661,10 +662,10 @@
         <Button
             android:id="@+id/x16"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -672,10 +673,10 @@
         <Button
             android:id="@+id/x26"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -683,10 +684,10 @@
         <Button
             android:id="@+id/x36"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -694,10 +695,10 @@
         <Button
             android:id="@+id/x46"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -705,10 +706,10 @@
         <Button
             android:id="@+id/x56"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -716,10 +717,10 @@
         <Button
             android:id="@+id/x66"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -727,10 +728,10 @@
         <Button
             android:textColor="#00ff11"
             android:id="@+id/x76"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -738,10 +739,10 @@
         <Button
             android:id="@+id/x86"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -755,10 +756,10 @@
         <Button
             android:id="@+id/x07"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -766,10 +767,10 @@
         <Button
             android:id="@+id/x17"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -777,10 +778,10 @@
         <Button
             android:id="@+id/x27"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -788,21 +789,21 @@
         <Button
             android:id="@+id/x37"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
 
         <Button
             android:id="@+id/x47"
-            android:layout_width="18pt"
+            android:layout_width="15pt"
             android:textColor="#00ff11"
-            android:layout_height="18pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -810,10 +811,10 @@
         <Button
             android:id="@+id/x57"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -821,21 +822,21 @@
         <Button
             android:id="@+id/x67"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
 
         <Button
             android:id="@+id/x77"
-            android:layout_width="18pt"
+            android:layout_width="15pt"
             android:textColor="#00ff11"
-            android:layout_height="18pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -843,10 +844,10 @@
         <Button
             android:id="@+id/x87"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -855,15 +856,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="200pt"
+        android:paddingTop="196pt"
         android:paddingLeft="10dp">
 
         <Button
             android:id="@+id/x08"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center"
@@ -872,10 +873,10 @@
         <Button
             android:id="@+id/x18"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -883,10 +884,10 @@
         <Button
             android:id="@+id/x28"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -894,10 +895,10 @@
         <Button
             android:id="@+id/x38"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -905,10 +906,10 @@
         <Button
             android:id="@+id/x48"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -916,10 +917,10 @@
         <Button
             android:id="@+id/x58"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -927,10 +928,10 @@
         <Button
             android:id="@+id/x68"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -938,10 +939,10 @@
         <Button
             android:id="@+id/x78"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -949,10 +950,10 @@
         <Button
             android:id="@+id/x88"
             android:textColor="#00ff11"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
@@ -961,189 +962,201 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="250pt"
+        android:paddingTop="485dp"
         android:paddingLeft="10dp">
 
         <Button
             android:id="@+id/x1"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="1"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x2"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="2"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x3"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="3"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x4"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="4"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x5"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="5"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x6"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="6"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x7"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="7"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x8"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="8"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/x9"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/back"
             android:text="9"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="275pt"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:paddingTop="530dp"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
 
         <Button
             android:id="@+id/xhint"
-            android:layout_width="35pt"
-            android:layout_height="18pt"
+            android:layout_width="30pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="6dp"
             android:background="@drawable/back"
             android:text="hint"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/xcheck"
-            android:layout_width="45pt"
-            android:layout_height="18pt"
+            android:layout_width="30pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="6dp"
             android:background="@drawable/back"
             android:text="check"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/xsolve"
-            android:layout_width="45pt"
-            android:layout_height="18pt"
+            android:layout_width="30pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="6dp"
             android:background="@drawable/back"
             android:text="solve"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/xdel"
-            android:layout_width="wrap_content"
-            android:layout_height="18pt"
+            android:layout_width="30pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="6dp"
             android:background="@drawable/back"
             android:text="Del"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/xclear"
-            android:layout_width="18pt"
-            android:layout_height="18pt"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
-            android:layout_weight="1"
+            android:layout_marginTop="6dp"
             android:background="@drawable/back"
             android:text="C"
             android:textAlignment="center"
             android:textColor="#00ff11"
-            android:textSize="30sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
-
+        <Button
+            android:id="@+id/xquit"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/back"
+            android:text="Quit"
+            android:textAlignment="center"
+            android:textColor="#00ff11"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="0.06" />
+        <!--android:layout_weight=".02" -->
     </LinearLayout>
 
 </RelativeLayout>
