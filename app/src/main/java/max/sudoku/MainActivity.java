@@ -473,6 +473,9 @@ public class MainActivity extends AppCompatActivity {
                 xsolve.setBackgroundColor(Color.BLUE);
                 //Log.d("Starting","--------------------------------------------------------------");
                 loops=0;
+                solveHorizontal();
+                solveVertical();
+                solveBox();
                 if(solveRecur(0,0)){
                     writeToScreen();
                 }else{
@@ -577,6 +580,71 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    void solveHorizontal(){
+        for(int i=0;i<9;i++){
+            int[] arr = new int[10];
+            int t=0;
+            for(int j=0;j<9;j++){
+                if(gridVal[j][i] != 0 && arr[gridVal[j][i]]==0)t++;
+                ++arr[gridVal[j][i]];
+            }
+            if(t==8){
+                for(int k=1;k<10;k++){
+                    if(arr[k]==0){
+                        for(int j=0;j<9;j++){
+                            if(gridVal[j][i]==0){
+                                gridVal[j][i]=k;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    void solveVertical(){
+        for(int i=0;i<9;i++){
+            int[] arr = new int[10];
+            int t=0;
+            for(int j=0;j<9;j++){
+                if(gridVal[i][j] !=0 && arr[gridVal[i][j]]==0)t++;
+                ++arr[gridVal[i][j]];
+            }
+            if(t==8){
+                for(int k=1;k<10;k++){
+                    if(arr[k]==0){
+                        for(int j=0;j<9;j++){
+                            if(gridVal[i][j]==0){
+                                gridVal[j][i]=k;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    void solveBox(){
+        for(int a =0;a<3;a++)for(int b=0;b<3;b++){
+            int[] arr = new int[10];
+            int t=0;
+            for(int i=a*3;i<a*3+3;i++)for(int j=b*3;j<b*3+3;j++){
+                if(gridVal[i][j] != 0 && arr[gridVal[i][j]]==0)t++;
+                ++arr[gridVal[i][j]];
+            }
+            if(t==8){
+                for(int k=1;k<10;k++){
+                    if(arr[k]==0){
+                        for(int i=a*3;i<a*3+3;i++)for(int j=b*3;j<b*3+3;j++){
+                            if(gridVal[i][j]==0){
+                                gridVal[i][j]=k;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     boolean solveRecurCheck(int x,int y,int v){
         //horizontal
         for(int i=0;i<9;i++){
@@ -601,7 +669,7 @@ public class MainActivity extends AppCompatActivity {
 
     boolean solveRecur(int x, int y){
         loops++;
-        if(loops>250000)return false;
+        if(loops>2500000)return false;
        //Log.d("Recur","In the loop  "+loops);
         int v = gridVal[x][y],nx=x+1,ny=y;
         if(nx>8){
@@ -635,6 +703,7 @@ public class MainActivity extends AppCompatActivity {
             else btn.setText("");
         }
     }
+
     void clearScreen(){
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             final Button btn = grid[i][j];
