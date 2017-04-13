@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     void databaseCheck(){
         File database=getApplicationContext().getDatabasePath("TESS.db");
         if (!database.exists()) {
+            database_save("0","000000000000000000000000000000000000000000000000000000000000000000000000000000000");
             database_save("1","010020300004005060070000008006900070000100002030048000500006040000800106008000000"); // level 1 data
             database_save("2","000427000060090080000000000900000008120030045500000007000000000040060030000715000"); // level 2 data
             database_save("3","000398000050010060000000000800000009120030045700000008000000000040020010000769000"); // level 3 data
@@ -50,6 +51,24 @@ public class MainActivity extends AppCompatActivity {
         long newRowId = db.insert(DatastoreFactory.FeedEntry.TABLE_NAME, null, values);
         Log.w("Database","-SAVING-");
 
+    }
+    void database_update(String level, String board){
+        SQLiteDatabase db = mDbHelper.getReadableDatabase();
+
+        // New value for one column
+        ContentValues values = new ContentValues();
+        values.put(DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD, board);
+
+        // Which row to update, based on the title
+        String selection = DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD + " LIKE ?";
+        String[] selectionArgs = { level };
+
+        int count = db.update(
+                DatastoreFactory.FeedEntry.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        Log.w("Database","-UPDATING-");
     }
     private String database_retrieve(String level){
 
@@ -180,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
         switch(n){
             case 1:
                 board = database_retrieve("1");
+
                 break;
             case 2:
                 board = database_retrieve("2");
@@ -439,6 +459,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    void saveCurrentState(){
+        Log.w("Saved State: ", database_retrieve("0"));
+        getValues();
+        String temp = "";
+        for(int i=0;i<9;i++)for(int j=0; j<9; j++){
+            int p = gridVal[i][j];
+
+            temp = temp + p +"";
+            //Log.w("Grid Val: ", p +"");
+        }
+        Log.w("StringVal:", temp);
+        //database_save("0", temp);
+        database_update("0",temp);
+    }
 
     void startListenerOptions(){
         xcheck.setOnClickListener(new View.OnClickListener(){
@@ -459,7 +493,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 s1Listener();
+                saveCurrentState();
                 clearScreen();
+
             }
         });
 
@@ -524,6 +560,7 @@ public class MainActivity extends AppCompatActivity {
             //Log.d("Grid","x = "+i+", y = "+j+"   == "+s);
             if(!s.equals(""))gridVal[i][j]=Integer.parseInt(s);
         }
+
     }
     void checkHorizontal(){
         for(int i=0;i<9;i++){
