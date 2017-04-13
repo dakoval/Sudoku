@@ -1,5 +1,9 @@
 package max.sudoku;
 
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.DatabaseUtils;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,17 +11,70 @@ import android.util.Log;
 import android.widget.Button;
 import android.view.View;
 
-
 public class MainActivity extends AppCompatActivity {
     static int dif,i,j,loops;
     static Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
     static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,b=null;
     static Button[][] grid = new Button[9][9];
     static int[][] gridVal = new int[9][9];
+    DatastoreFactory.DatastoreFactoryDbHelper mDbHelper = new DatastoreFactory.DatastoreFactoryDbHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         s1Listener();
+       // database_save("2","000427000060090080000000000900000008120030045500000007000000000040060030000715000");
+        //database_retrieve();
+    }
+
+    void database_save(String level, String board){
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(DatastoreFactory.FeedEntry.COLUMN_NAME_LEVEL, level);
+        values.put(DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD, board);
+
+        long newRowId = db.insert(DatastoreFactory.FeedEntry.TABLE_NAME, null, values);
+        Log.w("Save","-YES-");
+
+    }
+    private String database_retrieve(String level){
+
+        SQLiteDatabase db = mDbHelper.getReadableDatabase();
+
+        String[] projection = {
+                DatastoreFactory.FeedEntry._ID,
+                DatastoreFactory.FeedEntry.COLUMN_NAME_LEVEL,
+                DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD
+        };
+
+        String selection = DatastoreFactory.FeedEntry.COLUMN_NAME_LEVEL + " = ?";
+        String[] selectionArgs = { level };
+
+        String sortOrder =
+                DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD + " DESC";
+
+        Cursor cursor = db.query(
+                DatastoreFactory.FeedEntry.TABLE_NAME,                     // The table to query
+                projection,                               // The columns to return
+                selection,                                // The columns for the WHERE clause
+                selectionArgs,                            // The values for the WHERE clause
+                null,                                     // don't group the rows
+                null,                                     // don't filter by row groups
+                sortOrder                                 // The sort order
+        );
+
+        Log.w("test",DatabaseUtils.dumpCursorToString(cursor));
+        String data = "";
+        if (cursor.moveToFirst()){
+            while(!cursor.isAfterLast()){
+                data = cursor.getString(cursor.getColumnIndex("board"));
+               // Log.w("r", data);
+                cursor.moveToNext();
+            }
+        }
+        cursor.close();
+        //TODO: randomly select board values (rand (0, cursor.size))
+        return data;
     }
     void s1Listener(){
         setContentView(R.layout.s1);
@@ -52,35 +109,35 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 dif=1;
-                retrievePuzzle();
+                retrievePuzzle(1); // load level 1 Sudoku game
             }
         });
         d2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=2;
-                retrievePuzzle();
+                retrievePuzzle(2); // load level 2 Sudoku game
             }
         });
         d3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=3;
-                retrievePuzzle();
+                retrievePuzzle(3); // load level 3 Sudoku game
             }
         });
         d4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=4;
-                retrievePuzzle();
+                retrievePuzzle(4); // load level 4 Sudoku game
             }
         });
         d5.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 dif=5;
-                retrievePuzzle();
+                retrievePuzzle(5); // load level 5 Sudoku game
             }
         });
     }
@@ -102,13 +159,38 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    void retrievePuzzle(){
-
-        //TODO retrieve from database
-        //TODO allow user to pick a puzzle on each level
-        String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000001";
+    void retrievePuzzle(int n){
+        //TODO: randomly pull up puzzles from the database
+        String board = null;
+        switch(n){
+            case 1:
+                //board = "010020300004005060070000008006900070000100002030048000500006040000800106008000000";
+                board = database_retrieve("1");
+                break;
+            case 2:
+                //board = "010020300004005060070000008006900070000100002030048000500006040000800106008000000";
+                board = database_retrieve("2");
+                break;
+            case 3:
+               // board = "000398000050010060000000000800000009120030045700000008000000000040020010000769000";
+                board = database_retrieve("3");
+                break;
+            case 4:
+                //board = "102004070000902800009003004000240006000107000400068000200800700007501000080400109";
+                board = database_retrieve("4");
+                break;
+            case 5:
+                //board = "002008050000040070480072000008000031600080005570000600000960048090020000030800900";
+                board = database_retrieve("5");
+                break;
+            default:
+                break;
+        }
+        //String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000001";
+       // String s = "010020300004005060070000008006900070000100002030048000500006040000800106008000000";
+        //String s = "002008050000040070480072000008000031600080005570000600000960048090020000030800900";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
-            gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
+            gridVal[j][i]=Integer.parseInt(board.charAt(i*9+j)+"");
         }
         setContentView(R.layout.s3);
         boardListener();
