@@ -16,7 +16,7 @@ import java.io.File;
 public class MainActivity extends AppCompatActivity {
     static int dif,i,j,loops;
     static Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
-    static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,b=null;
+    static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,xquit,b=null;
     static Button[][] grid = new Button[9][9];
     static int[][] gridVal = new int[9][9];
     DatastoreFactory.DatastoreFactoryDbHelper mDbHelper = new DatastoreFactory.DatastoreFactoryDbHelper(this);
@@ -308,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
         x9 = (Button) findViewById(R.id.x9);
         xdel = (Button) findViewById(R.id.xdel);
         xclear = (Button) findViewById(R.id.xclear);
-      //  xquit = (Button) findViewById(R.id.xquit);
+        xquit = (Button) findViewById(R.id.xquit);
         startListener();
         startListenerOptions();
 
@@ -453,6 +453,13 @@ public class MainActivity extends AppCompatActivity {
                 checkBox();
                 startListenerOptions();
                 startListener();
+            }
+        });
+        xquit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+               // setContentView(R.layout.s1);
+                s1Listener();
             }
         });
 
