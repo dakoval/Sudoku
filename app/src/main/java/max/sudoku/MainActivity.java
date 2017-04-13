@@ -458,8 +458,8 @@ public class MainActivity extends AppCompatActivity {
         xquit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-               // setContentView(R.layout.s1);
                 s1Listener();
+                clearScreen();
             }
         });
 
