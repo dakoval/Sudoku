@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
+        android:paddingLeft="2dp"
         android:paddingRight="0dp">
 
         <Button
@@ -49,6 +49,11 @@
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
 
         <Button
             android:id="@+id/x30"
@@ -82,7 +87,11 @@
             android:textAlignment="center"
             android:textColor="#00ff11"
             android:textSize="18sp" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x60"
             android:layout_width="15pt"
@@ -121,7 +130,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="25pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x01"
@@ -155,7 +164,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x31"
             android:textColor="#00ff11"
@@ -188,7 +201,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x61"
             android:textColor="#00ff11"
@@ -226,7 +243,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="47pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x02"
@@ -260,7 +277,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x32"
             android:textColor="#00ff11"
@@ -293,7 +314,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x62"
             android:textColor="#00ff11"
@@ -331,7 +356,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="75pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x03"
@@ -365,7 +390,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x33"
             android:textColor="#00ff11"
@@ -398,7 +427,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x63"
             android:textColor="#00ff11"
@@ -436,7 +469,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="100pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x04"
@@ -470,7 +503,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x34"
             android:textColor="#00ff11"
@@ -503,7 +540,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x64"
             android:textColor="#00ff11"
@@ -541,7 +582,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="123pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x05"
@@ -575,7 +616,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x35"
             android:textColor="#00ff11"
@@ -608,7 +653,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x65"
             android:textColor="#00ff11"
@@ -646,7 +695,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="150pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x06"
@@ -680,7 +729,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x36"
             android:textColor="#00ff11"
@@ -713,7 +766,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x66"
             android:textColor="#00ff11"
@@ -751,7 +808,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="175pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x07"
@@ -785,7 +842,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x37"
             android:textColor="#00ff11"
@@ -818,7 +879,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x67"
             android:textColor="#00ff11"
@@ -857,7 +922,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="196pt"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp">
 
         <Button
             android:id="@+id/x08"
@@ -891,7 +956,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x38"
             android:textColor="#00ff11"
@@ -924,7 +993,11 @@
             android:background="@drawable/back"
             android:textSize="18sp"
             android:textAlignment="center" />
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="6dp"/>
         <Button
             android:id="@+id/x68"
             android:textColor="#00ff11"
@@ -963,7 +1036,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="485dp"
-        android:paddingLeft="10dp">
+        android:paddingLeft="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <Button
             android:id="@+id/x1"
@@ -977,6 +1052,11 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/x2"
             android:layout_width="15pt"
@@ -989,6 +1069,11 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/x3"
             android:layout_width="15pt"
@@ -1001,6 +1086,13 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
+
         <Button
             android:id="@+id/x4"
             android:layout_width="15pt"
@@ -1013,6 +1105,11 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/x5"
             android:layout_width="15pt"
@@ -1025,6 +1122,11 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/x6"
             android:layout_width="15pt"
@@ -1037,6 +1139,11 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/x7"
             android:layout_width="15pt"
@@ -1049,6 +1156,11 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/x8"
             android:layout_width="15pt"
@@ -1061,6 +1173,11 @@
             android:textColor="#00ff11"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/x9"
             android:layout_width="15pt"
@@ -1078,9 +1195,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="545dp"
-        android:paddingLeft="10dp"
-        android:layout_alignParentStart="true"
-        android:weightSum="1">
+        android:paddingLeft="2dp"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
 
         <Button
             android:id="@+id/xhint"
