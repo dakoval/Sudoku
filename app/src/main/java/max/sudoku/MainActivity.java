@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         if (!database.exists()) {
             database_save("0","000000000000000000000000000000000000000000000000000000000000000000000000000000000"); // Initialize save state
             database_save("1","010020300004005060070000008006900070000100002030048000500006040000800106008000000"); // level 1 data
-            database_save("2","000427000060090080000000000900000008120030045500000007000000000040060030000715000"); // level 2 data
-            database_save("3","000398000050010060000000000800000009120030045700000008000000000040020010000769000"); // level 3 data
-            database_save("4","102004070000902800009003004000240006000107000400068000200800700007501000080400109"); // level 4 data
-            database_save("5","002008050000040070480072000008000031600080005570000600000960048090020000030800900"); // level 5 data
+            database_save("2","002008050000040070480072000008000031600080005570000600000960048090020000030800900"); // level 2 data
+            database_save("3","102004070000902800009003004000240006000107000400068000200800700007501000080400109"); // level 3 data
+            database_save("4","000398000050010060000000000800000009120030045700000008000000000040020010000769000"); // level 4 data
+            database_save("5","000427000060090080000000000900000008120030045500000007000000000040060030000715000"); // level 5 data
             Log.i("Database", "Not Found: adding board data now. ");
         } else {
             Log.i("Database", "Found, yay!");
@@ -648,7 +648,7 @@ public class MainActivity extends AppCompatActivity {
             for(int j=0;j<9;j++){
                 if(gridVal[j][i] != 0 && arr[gridVal[j][i]]==0)t++;
                 ++arr[gridVal[j][i]];
-                if(arr[gridVal[j][i]]>1)return false;
+                if(gridVal[j][i]!=0 && arr[gridVal[j][i]]>1)return false;
             }
             if(t==8){
                 for(int k=1;k<10;k++){
@@ -671,7 +671,7 @@ public class MainActivity extends AppCompatActivity {
             for(int j=0;j<9;j++){
                 if(gridVal[i][j] !=0 && arr[gridVal[i][j]]==0)t++;
                 ++arr[gridVal[i][j]];
-                if(arr[gridVal[i][j]]>1)return false;
+                if(gridVal[i][j]!=0 && arr[gridVal[i][j]]>1)return false;
             }
             if(t==8){
                 for(int k=1;k<10;k++){
@@ -694,7 +694,7 @@ public class MainActivity extends AppCompatActivity {
             for(int i=a*3;i<a*3+3;i++)for(int j=b*3;j<b*3+3;j++){
                 if(gridVal[i][j] != 0 && arr[gridVal[i][j]]==0)t++;
                 ++arr[gridVal[i][j]];
-                if(arr[gridVal[i][j]]>1)return false;
+                if(gridVal[i][j]!=0 &&arr[gridVal[i][j]]>1)return false;
             }
             if(t==8){
                 for(int k=1;k<10;k++){
