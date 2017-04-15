@@ -532,10 +532,7 @@ public class MainActivity extends AppCompatActivity {
                 xsolve.setBackgroundColor(Color.BLUE);
                 //Log.d("Starting","--------------------------------------------------------------");
                 loops=0;
-                solveHorizontal();
-                solveVertical();
-                solveBox();
-                if(solveRecur(0,0)){
+                if(solveHorizontal() && solveVertical() && solveBox() && solveRecur(0,0)){
                     writeToScreen();
                 }else{
                     clearScreen();
@@ -644,13 +641,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    void solveHorizontal(){
+    boolean solveHorizontal(){
         for(int i=0;i<9;i++){
             int[] arr = new int[10];
             int t=0;
             for(int j=0;j<9;j++){
                 if(gridVal[j][i] != 0 && arr[gridVal[j][i]]==0)t++;
                 ++arr[gridVal[j][i]];
+                if(arr[gridVal[j][i]]>1)return false;
             }
             if(t==8){
                 for(int k=1;k<10;k++){
@@ -663,16 +661,17 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-
         }
+        return true;
     }
-    void solveVertical(){
+    boolean solveVertical(){
         for(int i=0;i<9;i++){
             int[] arr = new int[10];
             int t=0;
             for(int j=0;j<9;j++){
                 if(gridVal[i][j] !=0 && arr[gridVal[i][j]]==0)t++;
                 ++arr[gridVal[i][j]];
+                if(arr[gridVal[i][j]]>1)return false;
             }
             if(t==8){
                 for(int k=1;k<10;k++){
@@ -685,16 +684,17 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-
         }
+        return true;
     }
-    void solveBox(){
+    boolean solveBox(){
         for(int a =0;a<3;a++)for(int b=0;b<3;b++){
             int[] arr = new int[10];
             int t=0;
             for(int i=a*3;i<a*3+3;i++)for(int j=b*3;j<b*3+3;j++){
                 if(gridVal[i][j] != 0 && arr[gridVal[i][j]]==0)t++;
                 ++arr[gridVal[i][j]];
+                if(arr[gridVal[i][j]]>1)return false;
             }
             if(t==8){
                 for(int k=1;k<10;k++){
@@ -708,6 +708,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+        return true;
     }
     boolean solveRecurCheck(int x,int y,int v){
         //horizontal
