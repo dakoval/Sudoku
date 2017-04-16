@@ -5,9 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-/**
- * Created by Joe on 4/11/2017.
- */
 
 public final class DatastoreFactory {
     private DatastoreFactory() {}

@@ -1,8 +1,5 @@
 package max.sudoku;
 
-/**
- * Created by David on 4/15/2017.
- */
 import org.junit.Test;
 
 import static org.junit.Assert.*;

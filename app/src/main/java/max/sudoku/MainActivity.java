@@ -49,17 +49,14 @@ public class MainActivity extends AppCompatActivity {
         values.put(DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD, board);
 
         long newRowId = db.insert(DatastoreFactory.FeedEntry.TABLE_NAME, null, values);
-        Log.w("Database","-SAVING-");
 
     }
     void database_update(String level, String board){
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
-        // New value for one column
         ContentValues values = new ContentValues();
         values.put(DatastoreFactory.FeedEntry.COLUMN_NAME_BOARD, board);
 
-        // Which row to update, based on the title
         String selection = DatastoreFactory.FeedEntry.COLUMN_NAME_LEVEL + " LIKE ?";
         String[] selectionArgs = { level };
 
@@ -68,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 values,
                 selection,
                 selectionArgs);
-        Log.w("Database","-UPDATING-");
     }
     private String database_retrieve(String level){
 
@@ -96,12 +92,11 @@ public class MainActivity extends AppCompatActivity {
                 sortOrder                                 // The sort order
         );
 
-        Log.w("test",DatabaseUtils.dumpCursorToString(cursor));
+
         String data = "";
         if (cursor.moveToFirst()){
             while(!cursor.isAfterLast()){
                 data = cursor.getString(cursor.getColumnIndex("board"));
-               // Log.w("r", data);
                 cursor.moveToNext();
             }
         }
@@ -235,9 +230,7 @@ public class MainActivity extends AppCompatActivity {
             default:
                 break;
         }
-        //String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000001";
-       // String s = "010020300004005060070000008006900070000100002030048000500006040000800106008000000";
-        //String s = "002008050000040070480072000008000031600080005570000600000960048090020000030800900";
+
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             gridVal[j][i]=Integer.parseInt(board.charAt(i*9+j)+"");
         }
@@ -480,16 +473,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void saveCurrentState(){
-        Log.w("Saved State: ", database_retrieve("0"));
         getValues();
         String temp = "";
         for(int i=0;i<9;i++)for(int j=0; j<9; j++){
             int p = gridVal[i][j];
 
             temp = temp + p +"";
-            //Log.w("Grid Val: ", p +"");
         }
-        Log.w("StringVal:", temp);
         if(!solved){
             database_update("0",temp);
         }
@@ -530,7 +520,6 @@ public class MainActivity extends AppCompatActivity {
                 stopListener();
                 getValues();
                 xsolve.setBackgroundColor(Color.BLUE);
-                //Log.d("Starting","--------------------------------------------------------------");
                 loops=0;
                 if(solveHorizontal() && solveVertical() && solveBox() && solveRecur(0,0)){
                     writeToScreen();
@@ -581,7 +570,6 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             final Button btn = grid[i][j];
             String s = btn.getText().toString();
-            //Log.d("Grid","x = "+i+", y = "+j+"   == "+s);
             if(!s.equals(""))gridVal[i][j]=Integer.parseInt(s);
         }
 
@@ -724,8 +712,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         //box
-        for(int i=(x/3)*3;i<(x/3)*3+3;i++)for(int j=(y/3)*3;j<(y/3)*3+3;j++){//Log.d("Box","For x:"+i+", y:"+j+",  "+v);
-            if(!(i==x && j==y) && v==gridVal[i][j]){//Log.d("check","b false");
+        for(int i=(x/3)*3;i<(x/3)*3+3;i++)for(int j=(y/3)*3;j<(y/3)*3+3;j++){
+            if(!(i==x && j==y) && v==gridVal[i][j]){
                 return false;
             }
         }
@@ -735,7 +723,6 @@ public class MainActivity extends AppCompatActivity {
     boolean solveRecur(int x, int y){
         loops++;
         if(loops>2500000)return false;
-       //Log.d("Recur","In the loop  "+loops);
         int v = gridVal[x][y],nx=x+1,ny=y;
         if(nx>8){
             ny++;
@@ -747,12 +734,9 @@ public class MainActivity extends AppCompatActivity {
                 return solveRecur(nx,ny);
             }else return false;
         }
-        //Log.d("Recur","try random");
         for(int i=1;i<10;i++){
-            //Log.d("Try","For x:"+x+", y:"+y+",  "+i);
             gridVal[x][y]=i;
             if(solveRecurCheck(x,y,i)){
-                //Log.d("Use","For x:"+x+", y:"+y+",  i");
                 if(x==8 && y==8)return true;
                 if(solveRecur(nx,ny))return true;
             }

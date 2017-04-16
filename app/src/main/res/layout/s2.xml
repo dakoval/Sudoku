@@ -17,7 +17,7 @@
         android:layout_below="@+id/d1"
         android:layout_marginTop="12dp"
         android:background="@android:color/holo_green_light"
-        android:text="2"
+        android:text="@string/two"
         android:textSize="24sp" />
 
     <Button
@@ -28,7 +28,7 @@
         android:layout_below="@+id/d2"
         android:layout_marginTop="12dp"
         android:background="@android:color/holo_green_light"
-        android:text="3"
+        android:text="@string/three"
         android:textSize="24sp" />
 
     <Button
@@ -39,7 +39,7 @@
         android:layout_below="@+id/d3"
         android:layout_marginTop="12dp"
         android:background="@android:color/holo_green_light"
-        android:text="4"
+        android:text="@string/four"
         android:textSize="24sp" />
 
     <Button
@@ -50,7 +50,7 @@
         android:layout_below="@+id/d4"
         android:layout_marginTop="12dp"
         android:background="@android:color/holo_green_light"
-        android:text="5"
+        android:text="@string/five"
         android:textSize="24sp" />
 
     <Button
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:background="@android:color/holo_green_light"
-        android:text="1"
+        android:text="@string/one"
         android:textSize="24sp"
         android:layout_marginEnd="57dp"
         android:layout_below="@+id/textView4"
@@ -75,7 +75,7 @@
         android:layout_x="31dp"
         android:layout_y="295dp"
         android:fontFamily="casual"
-        android:text="The Extraordinary Sudoku Solver"
+        android:text="@string/title"
         android:textAlignment="center"
         android:textColor="@android:color/holo_green_light"
         android:textSize="30sp"
@@ -89,7 +89,7 @@
         android:layout_x="128dp"
         android:layout_y="114dp"
         android:fontFamily="casual"
-        android:text="TESS"
+        android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@android:color/holo_green_light"
         android:textSize="90sp"
@@ -107,7 +107,7 @@
         android:layout_x="128dp"
         android:layout_y="114dp"
         android:fontFamily="casual"
-        android:text="Select Difficulty"
+        android:text="@string/difficulty"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@android:color/holo_green_light"
         android:textSize="36sp"
@@ -127,7 +127,7 @@
         android:layout_marginBottom="8dp"
         android:layout_x="117dp"
         android:layout_y="660dp"
-        android:text="Created By David Koval And Joseph Mammo"
+        android:text="@string/authors"
         android:textColor="@android:color/holo_green_light"
         android:textSize="12sp"
         tools:layout_editor_absoluteX="122dp"
@@ -138,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/back"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="@android:color/holo_green_light"
         android:textSize="24sp"
         android:layout_alignBaseline="@+id/xcontinue"
@@ -150,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_light"
-        android:text="Continue"
+        android:text="@string/cont"
         android:textSize="14sp"
         android:layout_alignTop="@+id/d5"
         android:layout_toEndOf="@+id/d1" />
