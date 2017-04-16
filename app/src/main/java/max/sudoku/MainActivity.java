@@ -677,7 +677,7 @@ public class MainActivity extends AppCompatActivity {
                 for(int k=1;k<10;k++){
                     if(arr[k]==0){
                         for(int j=0;j<9;j++){
-                            if(gridVal[i][j]==0){
+                            if(gridVal[j][i]==0){
                                 gridVal[j][i]=k;
                             }
                         }
