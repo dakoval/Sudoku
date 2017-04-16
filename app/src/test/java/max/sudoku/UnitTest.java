@@ -1,7 +1,7 @@
 package max.sudoku;
 
 /**
- * Created by Max on 4/15/2017.
+ * Created by David on 4/15/2017.
  */
 import org.junit.Test;
 
@@ -126,7 +126,7 @@ public class UnitTest {
     @Test
     public void solveRecurCorrect5() throws Exception {
         m.gridVal=new int[9][9];
-        String s = "000427000060090080000000000900000008120030045500000007000000000040060030000715000";
+        String s = "000427000060090080000000000900000008120030045500000007000000000040060030000715004";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             m.gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
         }
