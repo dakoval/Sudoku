@@ -39,7 +39,13 @@ Overall introduction
 \hline
 DESC & Description  \\ 
 \hline
+Grid & This is where all the values are stored for the player to see.  \\ 
+\hline
 ID & Identification  \\ 
+\hline
+PW & Priority Weights  \\ 
+\hline
+User & Whoever will be using the app  \\ 
 \hline
 \end{tabular}
 
@@ -59,17 +65,29 @@ Be sure to include numbering scheme including Identifier (RQ1, RQ2, and RQn) and
 Provide a high-level use case diagram for the high-level system models and a traceability matrix for the requirement validation.
  
 \subsection{Functional Requirements}
-
+\todo{Add priority weights}
 \textbf{ID:R1} \newline TITLE: Play Game \newline DESC: The user first opens up the app, they should be able to choose the option to play a Sudoku puzzle. They user should be able to stay as long as they want to on this screen.\newline
-\textbf{ID:R2} \newline TITLE: Select Difficulty \newline DESC: The user should be able to select a difficulty setting that better suites needs at any time. There should be 5 difficulty options for the user to choose from. 1 being the easiest all the way down to 5 being the hardest.
+\textbf{ID:R2} \newline TITLE: Select Difficulty \newline DESC: The user should be able to select a difficulty setting that better suites needs at any time. There should be 5 difficulty options for the user to choose from. 1 being the easiest all the way down to 5 being the hardest.\newline 
 \textbf{ID:R3} \newline TITLE: Back Option \newline DESC: The user should be able to return to the main screen from the select difficulty screen if they don't select a difficulty. The user can remain on the select difficulty as long as the want to.\newline
 \textbf{ID:R4} \newline TITLE: Continue Game \newline DESC: The user should be able to continue a game that has been previously started whether or not the app has been closed. All of the user's input should be saved so they could be brought up again should the user want to continue a game.\newline 
-\textbf{ID:R5} \newline TITLE: Get Puzzle \newline DESC: When the user selects a difficulty, a puzzle with the selected difficulty should be retrieved from the database for the user to be able to play it and enjoy the game.
+\textbf{ID:R5} \newline TITLE: Get Puzzle \newline DESC: When the user selects a difficulty, a puzzle with the selected difficulty should be retrieved from the database for the user to be able to play it and enjoy the game.\newline 
+\textbf{ID:R6} \newline TITLE: Solver Option \newline DESC: On started, the user should be able to select the Solver option in the app to go straight to the solver part of the app. \newline
+\textbf{ID:R7} \newline TITLE: Input Sudoku Puzzle To Solve \newline DESC: The user needs to be able to input any sort of Sudoku puzzle that the user has, with or without any extra numbers the user wishes to input. \newline
+\textbf{ID:R8} \newline TITLE: Check Current Board \newline DESC: The user should be able to check the status of the current puzzle they are working on. The user should be able to view the inputs that are conflicting with each other. They should be marked in some way for the user to be able to see them clearly. \newline
+\textbf{ID:R9} \newline TITLE: Delete an Input Value \newline DESC: The user should be able to delete an input value that they put in previously or a value that the system put in automatically. \newline
+\textbf{ID:R10} \newline TITLE: Clear Board \newline DESC: The user should be able to clear the entire board easily and effortlessly. \newline
+\textbf{ID:R11} \newline TITLE: Solve Current Board \newline DESC: The user should be able to have the option to solve the current board that they are working on. It should use the input the system put in as well as the inputs the user decided to add. \newline
+\textbf{ID:R12} \newline TITLE:
+
 
 
 \subsection{Non-Functional Requirements} 
 
-\textbf{ID:RQ1} \newline TITLE: System Availability \newline DESC: The system needs to  be available to the user 99\% of the time, whether or not the system is being used.
+\textbf{ID:RQ1} \newline TITLE: System Availability \newline DESC: The system needs to  be available to the user 99.9\% of the time, whether or not the system is being used. The system can only be down for 0.1\% of the time for updates or maintenance. \newline
+\textbf{ID:RQ2} \newline TITLE: Memory Space \newline DESC: The app should have a small footprint. The entire app should take up less than 5MBs of memory, this is including with future updates as well.\newline
+\textbf{ID:RQ3} \newline TITLE: Solve Time \newline DESC: The app should be able to determine a solution, if possible, for a given Sudoku puzzle in under 5 seconds.\newline
+\textbf{ID:RQ4} \newline TITLE: Search Algorithm \newline DESC: The Suduko solver must utilize some search algorithm such as depth first search or breadth first search or any other searching algorithm. \newline
+\textbf{ID:RQ5} \newline TITLE: 
 
 
 \section{System Design}
