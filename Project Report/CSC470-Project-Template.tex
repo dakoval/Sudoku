@@ -65,7 +65,7 @@ Be sure to include numbering scheme including Identifier (RQ1, RQ2, and RQn) and
 Provide a high-level use case diagram for the high-level system models and a traceability matrix for the requirement validation.
  
 \subsection{Functional Requirements}
-\todo{Add priority weights}
+\todo{How to add todo}
 \textbf{ID:R1} \newline TITLE: Play Game Option\newline DESC: The user first opens up the app, they should be able to choose the option to play a Sudoku puzzle. They user should be able to stay as long as they want to on this screen.\newline PW: 3 \newline \newline
 \textbf{ID:R2} \newline TITLE: Select Difficulty \newline DESC: The user should be able to select a difficulty setting that better suites needs at any time. There should be 5 difficulty options for the user to choose from. 1 being the easiest all the way down to 5 being the hardest.\newline PW: 2 \newline \newline
 \textbf{ID:R3} \newline TITLE: Back Option \newline DESC: The user should be able to return to the main screen from the select difficulty screen if they don't select a difficulty. The user can remain on the select difficulty as long as the want to.\newline PW: 1 \newline \newline
@@ -94,6 +94,28 @@ Provide a high-level use case diagram for the high-level system models and a tra
 \textbf{ID:RQ6} \newline TITLE: Easy to Use \newline DESC: The app should be very simple to use to any player with some general idea of how Sudoku puzzles work. \newline \newline
 \textbf{ID:RQ7} \newline TITLE: Private Information \newline DESC: The app should not keep any personal information about the user. There app should not ask the user for any passwords. \newline \newline
 
+\subsection{System Model}
+
+\subsubsection{Actors}
+
+\begin{itemize}
+   \item Player: This is the primary actor who will be using the app.
+   \item Database: This is the datastore that on the device that contains all the Sudoku puzzles for the user to play.
+\end{itemize}
+
+\subsubsection{Use Cases}
+
+\textbf{ID:UC1} \newline TITLE: Select Play Game \newline ACTORS: Player \newline DESC: Player opens up the app and selects to play a Sudoku puzzle. \newline \newline
+\textbf{ID:UC2} \newline TITLE: Select Solver \newline ACTORS: Player \newline DESC: Player opens up the app and selects the Solver option to solve a Sudoku puzzle they might have. \newline \newline
+\textbf{ID:UC3} \newline TITLE: Selects a difficulty \newline ACTORS: Player and Database\newline DESC: Player selects a difficulty from the options available and a Sudoku board is filled with a puzzle similar to the difficulty the Player selected. \newline \newline
+\textbf{ID:UC4} \newline TITLE: Quitting Time \newline ACTORS: Player and Database \newline DESC: When Player decides to quit the puzzle they are currently working on, the puzzle is saved to the database so Player can continue playing it.  \newline \newline
+\textbf{ID:UC5} \newline TITLE: Selecting Continue \newline ACTORS: Player and Database \newline DESC: When Player decides to play a game again and selects the continue option to bring up the previously saved game they were playing. \newline \newline
+\textbf{ID:UC6} \newline TITLE: Hint Option \newline ACTORS: Player \newline DESC: The Player is unsure of any other moves, so Player decides to select the hint option in order to recieve a hint about the current Sudoku puzzle they are working on. \newline \newline
+\textbf{ID:UC7} \newline TITLE: Solve Option \newline ACTORS: Player \newline DESC: The Player is tired of playing and wants to see the solution to the Sudoku puzzle, so they decided to tap the solve button to get all the answers. \newline \newline
+
+\subsubsection{Use Case Diagram}
+\subsubsection{Prototyping}
+\subsubsection{Traceability Matrix}
 \section{System Design}
 This is the system design section.
 
@@ -102,7 +124,7 @@ Provide an overview of the design, including diagrams, key design subsections, a
 
 \subsection{Realistic Constraints and Professional Standards}
 Identify and discuss realistic constraints on the problem, such that constraints may include economic, environmental, social, ethical, health and safety, manufacturability, policy issues, etc.
-
+\subsubsection{Constraints}
 \textbf{ID:C1} \newline TITLE: Memory Space \newline DESC: The app should have a small footprint. The entire app should take up less than 5MBs of memory, this is including with future updates as well.\newline\newline
 \textbf{ID:C2} \newline TITLE: Internet Connection for Updates\newline DESC: The app must have an internet connection established to be able to retrieve updated information from a master database. \newline\newline
 \textbf{ID:C3} \newline TITLE: Programming Language \newline DESC: The app must be written in mainly Java, there may be other languages within the program, but the main part of it should be in Java.\newline\newline
