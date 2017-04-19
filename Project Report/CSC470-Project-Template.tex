@@ -107,15 +107,21 @@ Provide a high-level use case diagram for the high-level system models and a tra
 
 \textbf{ID:UC1} \newline TITLE: Select Play Game \newline ACTORS: Player \newline DESC: Player opens up the app and selects to play a Sudoku puzzle. \newline \newline
 \textbf{ID:UC2} \newline TITLE: Select Solver \newline ACTORS: Player \newline DESC: Player opens up the app and selects the Solver option to solve a Sudoku puzzle they might have. \newline \newline
-\textbf{ID:UC3} \newline TITLE: Selects a difficulty \newline ACTORS: Player and Database\newline DESC: Player selects a difficulty from the options available and a Sudoku board is filled with a puzzle similar to the difficulty the Player selected. \newline \newline
+\textbf{ID:UC3} \newline TITLE: Selecting a difficulty \newline ACTORS: Player and Database\newline DESC: Player selects a difficulty from the options available and a Sudoku board is filled with a puzzle similar to the difficulty the Player selected. \newline \newline
 \textbf{ID:UC4} \newline TITLE: Quitting Time \newline ACTORS: Player and Database \newline DESC: When Player decides to quit the puzzle they are currently working on, the puzzle is saved to the database so Player can continue playing it.  \newline \newline
-\textbf{ID:UC5} \newline TITLE: Selecting Continue \newline ACTORS: Player and Database \newline DESC: When Player decides to play a game again and selects the continue option to bring up the previously saved game they were playing. \newline \newline
-\textbf{ID:UC6} \newline TITLE: Hint Option \newline ACTORS: Player \newline DESC: The Player is unsure of any other moves, so Player decides to select the hint option in order to recieve a hint about the current Sudoku puzzle they are working on. \newline \newline
-\textbf{ID:UC7} \newline TITLE: Solve Option \newline ACTORS: Player \newline DESC: The Player is tired of playing and wants to see the solution to the Sudoku puzzle, so they decided to tap the solve button to get all the answers. \newline \newline
+\textbf{ID:UC5} \newline TITLE: Continuing \newline ACTORS: Player and Database \newline DESC: When Player decides to play a game again and selects the continue option to bring up the previously saved game they were playing. \newline \newline
+\textbf{ID:UC6} \newline TITLE: Give me a hint \newline ACTORS: Player \newline DESC: The Player is unsure of any other moves, so Player decides to select the hint option in order to recieve a hint about the current Sudoku puzzle they are working on. \newline \newline
+\textbf{ID:UC7} \newline TITLE: Solve the Puzzle \newline ACTORS: Player \newline DESC: The Player is tired of playing and wants to see the solution to the Sudoku puzzle, so they decided to tap the solve button to get all the answers. \newline \newline
+\textbf{ID:UC8} \newline TITLE: Clear the Board \newline ACTORS: Player \newline DESC: The Player decides to start a new puzzle, so the Player hits the clear button to erase everything on the board. \newline \newline
+\textbf{ID:UC9} \newline TITLE: Playing the game \newline ACTORS: Player \newline DESC: The Player enjoys playing a Sudoku game by clicking the buttons and entering the numbers that they might think will solve the puzzle. \newline \newline
 
 \subsubsection{Use Case Diagram}
 \subsubsection{Prototyping}
 \subsubsection{Traceability Matrix}
+\begin{figure*}[!t]\centering
+\includegraphics[width=4.0in]{./Figure/Traceability_Matrix.PNG}
+\caption{Traceability Matrix of the TESS System.}\label{fig:traceabilitymatrix}
+\end{figure*}
 \section{System Design}
 This is the system design section.
 
@@ -134,7 +140,7 @@ Identify and discuss realistic constraints on the problem, such that constraints
 
 \begin{figure*}[!t]\centering
 \includegraphics[width=6.0in]{./Figure/Activity_Diagram.PNG}
-\caption{Activity diagram of a system.}\label{fig:act_dia_1}
+\caption{Activity diagram of a system.}\label{fig:act_dia_2}
 \end{figure*}
 
 
