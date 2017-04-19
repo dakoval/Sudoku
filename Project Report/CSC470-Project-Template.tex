@@ -66,7 +66,7 @@ Provide a high-level use case diagram for the high-level system models and a tra
  
 \subsection{Functional Requirements}
 \todo{Add priority weights}
-\textbf{ID:R1} \newline TITLE: Play Game \newline DESC: The user first opens up the app, they should be able to choose the option to play a Sudoku puzzle. They user should be able to stay as long as they want to on this screen.\newline
+\textbf{ID:R1} \newline TITLE: Play Game Option\newline DESC: The user first opens up the app, they should be able to choose the option to play a Sudoku puzzle. They user should be able to stay as long as they want to on this screen.\newline
 \textbf{ID:R2} \newline TITLE: Select Difficulty \newline DESC: The user should be able to select a difficulty setting that better suites needs at any time. There should be 5 difficulty options for the user to choose from. 1 being the easiest all the way down to 5 being the hardest.\newline 
 \textbf{ID:R3} \newline TITLE: Back Option \newline DESC: The user should be able to return to the main screen from the select difficulty screen if they don't select a difficulty. The user can remain on the select difficulty as long as the want to.\newline
 \textbf{ID:R4} \newline TITLE: Continue Game \newline DESC: The user should be able to continue a game that has been previously started whether or not the app has been closed. All of the user's input should be saved so they could be brought up again should the user want to continue a game.\newline 
@@ -77,17 +77,21 @@ Provide a high-level use case diagram for the high-level system models and a tra
 \textbf{ID:R9} \newline TITLE: Delete an Input Value \newline DESC: The user should be able to delete an input value that they put in previously or a value that the system put in automatically. \newline
 \textbf{ID:R10} \newline TITLE: Clear Board \newline DESC: The user should be able to clear the entire board easily and effortlessly. \newline
 \textbf{ID:R11} \newline TITLE: Solve Current Board \newline DESC: The user should be able to have the option to solve the current board that they are working on. It should use the input the system put in as well as the inputs the user decided to add. \newline
-\textbf{ID:R12} \newline TITLE:
+\textbf{ID:R12} \newline TITLE: Play Sudoku Game \newline DESC: The user should be able to play a Sudoku game buy selecting certain boxes and input a value into them. \newline
+\textbf{ID:R13} \newline TITLE: Hint Option \newline DESC: The user should have the option to get a hint on the current Sudoku game they are playing. The hint should display any correct value on the given board. \newline
+\textbf{ID:R14} \newline TITLE: Download Mobile Application \newline DESC: The user should be able to download the mobile application either from the Play Store or via Email to their Android phone. The download should be free. \newline
+
 
 
 
 \subsection{Non-Functional Requirements} 
 
 \textbf{ID:RQ1} \newline TITLE: System Availability \newline DESC: The system needs to  be available to the user 99.9\% of the time, whether or not the system is being used. The system can only be down for 0.1\% of the time for updates or maintenance. \newline
-\textbf{ID:RQ2} \newline TITLE: Memory Space \newline DESC: The app should have a small footprint. The entire app should take up less than 5MBs of memory, this is including with future updates as well.\newline
-\textbf{ID:RQ3} \newline TITLE: Solve Time \newline DESC: The app should be able to determine a solution, if possible, for a given Sudoku puzzle in under 5 seconds.\newline
-\textbf{ID:RQ4} \newline TITLE: Search Algorithm \newline DESC: The Suduko solver must utilize some search algorithm such as depth first search or breadth first search or any other searching algorithm. \newline
-\textbf{ID:RQ5} \newline TITLE: 
+\textbf{ID:RQ2} \newline TITLE: Solve Time \newline DESC: The app should be able to determine a solution, if possible, for a given Sudoku puzzle in under 5 seconds.\newline
+\textbf{ID:RQ3} \newline TITLE: Search Algorithm \newline DESC: The Suduko solver must utilize some search algorithm such as depth first search or breadth first search or any other searching algorithm. \newline
+\textbf{ID:RQ4} \newline TITLE: Pruning Technique \newline DESC: There must be some sort of pruning technique with solving the problem because 9\^81 is not feasible. \newline
+\textbf{ID:RQ5} \newline TITLE: Database Storage \newline DESC: The Database needs be stored locally on the device and new puzzles should be added to the device through updates or pulled from an external database. \newline
+
 
 
 \section{System Design}
@@ -98,6 +102,11 @@ Provide an overview of the design, including diagrams, key design subsections, a
 
 \subsection{Realistic Constraints and Professional Standards}
 Identify and discuss realistic constraints on the problem, such that constraints may include economic, environmental, social, ethical, health and safety, manufacturability, policy issues, etc.
+
+\textbf{ID:C1} \newline TITLE: Memory Space \newline DESC: The app should have a small footprint. The entire app should take up less than 5MBs of memory, this is including with future updates as well.\newline
+\textbf{ID:C2} \newline TITLE: Internet Connection for Updates\newline DESC: The app must have an internet connection established to be able to retrieve updated information from a master database. \newline
+\textbf{ID:C3} \newline TITLE: Programming Language \newline DESC: The app must be written in mainly Java, there may be other languages within the program, but the main part of it should be in Java.\newline
+\textbf{ID:C4} \newline TITLE: Android Device Only \newline DESC: The system must work on Android Devices, specifically the Galaxy Note 5 first, the following versions will include other phone models.\newline
 
 \begin{figure*}[!t]\centering
 \includegraphics[width=6.0in]{./Figure/Activity_Diagram.PNG}
