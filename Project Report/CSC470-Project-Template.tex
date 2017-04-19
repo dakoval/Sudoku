@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{todonotes}
 \usepackage{array}
+\usepackage{subcaption}
+\usepackage{graphicx}
 
 \title{CSC470: Software Engineering Final Report\\ TESS: The Extraordinary Sudoku Solver}
 \author{Team: \#1 \\David Koval and Joseph Mammo\\Instructor: Dr. Ahyoung Lee}
@@ -116,6 +118,12 @@ Provide a high-level use case diagram for the high-level system models and a tra
 \textbf{ID:UC9} \newline TITLE: Playing the game \newline ACTORS: Player \newline DESC: The Player enjoys playing a Sudoku game by clicking the buttons and entering the numbers that they might think will solve the puzzle. \newline \newline
 
 \subsubsection{Use Case Diagram}
+
+\begin{figure*}[h!]\centering
+	\includegraphics[width=4.0in]{./Figure/Usecase_Diagram.PNG}
+	\caption{Use case diagram of the TESS System.}\label{fig:usecasediagram}
+\end{figure*}
+
 \subsubsection{Prototyping}
 \subsubsection{Traceability Matrix}
 
@@ -123,6 +131,7 @@ Provide a high-level use case diagram for the high-level system models and a tra
 \includegraphics[width=4.0in]{./Figure/Traceability_Matrix.PNG}
 \caption{Traceability Matrix of the TESS System.}\label{fig:traceabilitymatrix}
 \end{figure*}
+
 \section{System Design}
 This is the system design section.
 
@@ -131,7 +140,16 @@ Provide an overview of the design, including diagrams, key design subsections, a
 
 \subsection{Realistic Constraints and Professional Standards}
 Identify and discuss realistic constraints on the problem, such that constraints may include economic, environmental, social, ethical, health and safety, manufacturability, policy issues, etc.
-\subsubsection{Constraints}
+\subsubsection{User Constraints}
+stuff \newline
+stuff \newline
+\begin{figure*}[ht]\centering
+	\includegraphics[width=2.0in]{./Figure/User_Constraint.JPG}
+	\caption{User constraints of the TESS System.}\label{fig:userconstraints}
+\end{figure*}
+
+\subsubsection{System Constraints}
+
 \textbf{ID:C1} \newline TITLE: Memory Space \newline DESC: The app should have a small footprint. The entire app should take up less than 5MBs of memory, this is including with future updates as well.\newline\newline
 \textbf{ID:C2} \newline TITLE: Internet Connection for Updates\newline DESC: The app must have an internet connection established to be able to retrieve updated information from a master database. \newline\newline
 \textbf{ID:C3} \newline TITLE: Programming Language \newline DESC: The app must be written in mainly Java, there may be other languages within the program, but the main part of it should be in Java.\newline\newline
@@ -150,6 +168,11 @@ Describe alternative designs that were considered during execution of the projec
 	\caption{Activity diagram of the TESS system.}\label{fig:activitydiagram}
 \end{figure*}
 
+stuff \newline
+stuff \newline
+stuff \newline
+
+stuff \newline
 \begin{figure*}[h!]
 	\centering
 	\includegraphics[width=5.0in]{./Figure/Sequence_Diagram.PNG}
@@ -161,7 +184,31 @@ Describe alternative designs that were considered during execution of the projec
 This is the system inplementation section.
 
 Describe the technical details for each of the subsystems or a the system-level and
-provide sequence diagrams or station/activity diagrams for your system implemenation.
+provide sequence diagrams or station/activity diagrams for your system implementation.
+\subsection{Design Overview}
+stuff \newline
+\ref{fig:UI1}
+\begin{figure}[h!]
+	\begin{subfigure}{\linewidth}
+		\includegraphics[width=.3\linewidth]{./Figure/Check.PNG}\hfill
+		\includegraphics[width=.3\linewidth]{./Figure/Solve.PNG}
+		\caption{1}
+		\label{fig:UI1}
+	\end{subfigure}\par\medskip
+	\begin{subfigure}{\linewidth}
+		\includegraphics[width=.3\linewidth]{./Figure/Check.PNG}\hfill
+		\includegraphics[width=.3\linewidth]{./Figure/Solve.PNG}
+		\caption{2}
+		\label{fig:UI2}
+	\end{subfigure}\par\medskip
+	\begin{subfigure}{\linewidth}
+		\includegraphics[width=.3\linewidth]{./Figure/Check.PNG}\hfill
+		\includegraphics[width=.3\linewidth]{./Figure/Solve.PNG}
+		\caption{3}
+		\label{fig:UI3}
+	\end{subfigure}
+	\caption{User interface of the TESS system.}
+\end{figure}
 
 
 
