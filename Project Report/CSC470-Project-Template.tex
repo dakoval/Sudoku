@@ -64,14 +64,11 @@ There are a few major goals that needed to be accomplished in this project. The 
 
  
 \section{Specific Requirements}
-This is the specific requirements section.
+This section will cover the specific requirements of the project including functional and non-functional requirements. The functional requirements are identified with R followed by a number and nonfunctional requirements are identified with RQ followed by a number. All the functional requirements are marked with a PW (Priority Weight) which refer to the priority of that specific requirement with 5 being the highest priority and 1 being the lowest.
 
-Be sure to include numbering scheme including Identifier (RQ1, RQ2, and RQn) and PW (the priority weights, may be the highest priority = 5 and the lowest priority = 1) to allow traceability.
-
-Provide a high-level use case diagram for the high-level system models and a traceability matrix for the requirement validation.
  
 \subsection{Functional Requirements}
-\todo{How to add todo}
+This section will cover the functional requirements associated with the project along with the following tags: ID, TITLE, DESC, and PW. \newline \newline
 \textbf{ID:R1} \newline TITLE: Play Game Option\newline DESC: The user first opens up the app, they should be able to choose the option to play a Sudoku puzzle. They user should be able to stay as long as they want to on this screen.\newline PW: 3 \newline \newline
 \textbf{ID:R2} \newline TITLE: Select Difficulty \newline DESC: The user should be able to select a difficulty setting that better suites needs at any time. There should be 5 difficulty options for the user to choose from. 1 being the easiest all the way down to 5 being the hardest.\newline PW: 2 \newline \newline
 \textbf{ID:R3} \newline TITLE: Back Option \newline DESC: The user should be able to return to the main screen from the select difficulty screen if they don't select a difficulty. The user can remain on the select difficulty as long as the want to.\newline PW: 1 \newline \newline
@@ -85,13 +82,10 @@ Provide a high-level use case diagram for the high-level system models and a tra
 \textbf{ID:R11} \newline TITLE: Solve Current Board \newline DESC: The user should be able to have the option to solve the current board that they are working on. It should use the input the system put in as well as the inputs the user decided to add. \newline PW: 5 \newline \newline
 \textbf{ID:R12} \newline TITLE: Play Sudoku Game \newline DESC: The user should be able to play a Sudoku game by selecting certain boxes and input a value into them. \newline PW: 4 \newline \newline
 \textbf{ID:R13} \newline TITLE: Hint Option \newline DESC: The user should have the option to get a hint on the current Sudoku game they are playing. The hint should display any correct value on the given board. \newline PW: 1 \newline \newline
-\textbf{ID:R14} \newline TITLE: Download Mobile Application \newline DESC: The user should be able to download the mobile application either from the Play Store or via Email to their Android phone. The download should be free. \newline PW: 5 \newline \newline
-
-
-
+\textbf{ID:R14} \newline TITLE: Download Mobile Application \newline DESC: The user should be able to download the mobile application either from the Play Store or via Email to their Android phone. The download should be free. \newline PW: 5 \newline 
 
 \subsection{Non-Functional Requirements} 
-
+This section will cover the non-functional requirements associated with the project along with the following tags: ID, TITLE, and DESC. \newline \newline
 \textbf{ID:RQ1} \newline TITLE: System Availability \newline DESC: The system needs to  be available to the user 99.9\% of the time, whether or not the system is being used. The system can only be down for 0.1\% of the time for updates or maintenance. \newline \newline
 \textbf{ID:RQ2} \newline TITLE: Solve Time \newline DESC: The app should be able to solve a given Sudoku puzzle, whether there is or isn't a solution in under 5 seconds.\newline \newline
 \textbf{ID:RQ3} \newline TITLE: Search Algorithm \newline DESC: The Suduko solver must utilize some search algorithm such as depth first search or breadth first search or any other searching algorithm. \newline \newline
@@ -100,17 +94,20 @@ Provide a high-level use case diagram for the high-level system models and a tra
 \textbf{ID:RQ6} \newline TITLE: Easy to Use \newline DESC: The app should be very simple to use to any player with some general idea of how Sudoku puzzles work. \newline \newline
 \textbf{ID:RQ7} \newline TITLE: Private Information \newline DESC: The app should not keep any personal information about the user. There app should not ask the user for any passwords. \newline \newline
 
+\subsection{Version}
+This is version 1.1 or v1.1, which is also the most current version of the system. Version 1.0 came out on the April 7, 2017; however, after test were conducted there were a few design flaws that needed to be worked around. Version 1.0 was not able to solve difficult Sudoku puzzles within the allotted and many of the beta testers were not pleased with this. After some thought v1.0 was pulled off the market and developers continued to improve the algorithm to solve the problem. In v1.1, the developers finally came up with a fast enough algorithm to solve it within the time limit. This new and updated version will be available on the market soon; however, it still remains in its early stages of development. 
+
 \subsection{System Model}
-
+This section will cover the general system model. This section includes the actors, use cases, use case diagram, prototyping and the traceability matrix.
 \subsubsection{Actors}
-
+The section covers the primary actors that are involved with the system directly or indirectly. \newline
 \begin{itemize}
-   \item Player: This is the primary actor who will be using the app.
+   \item Player: This is the primary actor who will be using the app as well as interacting with it.
    \item Database: This is the datastore that is on the device that contains all the Sudoku puzzles for the user to play.
 \end{itemize}
 
 \subsubsection{Use Cases}
-
+This section covers the use cases that are most prominant in the Sudoku app that describe how the user shall interact with the app. Each use case will contain the following components: ID, Title, Actors, and Description.\newline \newline
 \textbf{ID:UC1} \newline TITLE: Select Play Game \newline ACTORS: Player \newline DESC: Player opens up the app and selects to play a Sudoku puzzle. \newline \newline
 \textbf{ID:UC2} \newline TITLE: Select Solver \newline ACTORS: Player \newline DESC: Player opens up the app and selects the Solver option to solve a Sudoku puzzle they might have. \newline \newline
 \textbf{ID:UC3} \newline TITLE: Selecting a difficulty \newline ACTORS: Player and Database\newline DESC: Player selects a difficulty from the options available and a Sudoku board is filled with a puzzle similar to the difficulty the Player selected. \newline \newline
@@ -119,18 +116,16 @@ Provide a high-level use case diagram for the high-level system models and a tra
 \textbf{ID:UC6} \newline TITLE: Give me a hint \newline ACTORS: Player \newline DESC: The Player is unsure of any other moves, so Player decides to select the hint option in order to recieve a hint about the current Sudoku puzzle they are working on. \newline \newline
 \textbf{ID:UC7} \newline TITLE: Solve the Puzzle \newline ACTORS: Player \newline DESC: The Player is tired of playing and wants to see the solution to the Sudoku puzzle, so they decided to tap the solve button to get all the answers. \newline \newline
 \textbf{ID:UC8} \newline TITLE: Clear the Board \newline ACTORS: Player \newline DESC: The Player decides to start a new puzzle, so the Player hits the clear button to erase everything on the board. \newline \newline
-\textbf{ID:UC9} \newline TITLE: Playing the game \newline ACTORS: Player \newline DESC: The Player enjoys playing a Sudoku game by clicking the buttons and entering the numbers that they might think will solve the puzzle. \newline \newline
-
+\textbf{ID:UC9} \newline TITLE: Playing the game \newline ACTORS: Player \newline DESC: The Player enjoys playing a Sudoku game by clicking the buttons and entering the numbers that they might think will solve the puzzle. \newline
 \subsubsection{Use Case Diagram}
-
-\begin{figure*}[h!]\centering
+Figure \ref{fig:usecasediagram} depicts the the use case diagram used by the app as well as the develops to design a proper system.
+\begin{figure*}[ht]\centering
 	\includegraphics[width=4.0in]{./Figure/Usecase_Diagram.PNG}
 	\caption{Use case diagram of the TESS System.}\label{fig:usecasediagram}
 \end{figure*}
 
-\subsubsection{Prototyping}
 \subsubsection{Traceability Matrix}
-
+The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows the priority weight of each use case based on the requirements that it meets. As per the figure, use case 9 had one of the highest priorities, which was consequently one of the most important use cases as well.
 \begin{figure*}[ht]\centering
 \includegraphics[width=4.0in]{./Figure/Traceability_Matrix.PNG}
 \caption{Traceability Matrix of the TESS System.}\label{fig:traceabilitymatrix}
