@@ -24,7 +24,13 @@
 \clearpage
 
 \section{Summary} 
-\todo{!!!} High level summar with 1 page. the project goals, motivation or problem issues (requirements). Design considerations and choices to solve the problems to achieve the goals. Implementation, validation and testing plans.
+\todo{!!!} Have you ever played a Sudoku game that you weren’t able to solve? Have you spent hours trying to solve a specific puzzle, but something never quite added up? This is where we come in. with The Extraordinary Sudoku Solver, or as everyone in the lab calls it, TESS. TESS isn’t a normal sudoku game, it allows normal game play much like any sudoku game will; however, it has an added feature that makes it stand out from the rest of the apps currently on the market. TESS allows a user to input the given values from a sudoku puzzle and work its magic to find a solution for you. David and Joseph are currently working on TESS to get her up and running. 
+	The goal of TESS is to allow a user to play different sudoku games, much like most of the apps currently out there, but also allow a user to input a sudoku puzzle they have been working on elsewhere and get an instant solution. There are a few major problems that the developers are facing. One of the biggest problems in the time efficiency. TESS needs to be able to solve the entire game in under 5 seconds and even though that may seem like a long time, going through all the possible solutions won’t be fast enough. The developers are currently working on an algorithm that will work in O(N\^5) which is roughly 3 billion computations; however, with pruning and better algorithms, they will be able to get the algorithm to solve it much faster. Another major problem the young developers face is the allotted time to finish the project, they only have about a month to finish this massive project. They might be able to finish the project on time, if they dedicate enough time towards this project and focus on it more than the previous projects they worked on. 
+	The design will be rather simple much like any sudoku game out there; however, the color scheme will be different with a nice black and neon green coloring pattern. There will be a few buttons such as choosing to play a game as well as the ability to access the solver to solve a sudoku puzzle the user might have.
+	The goals of this project is to allow the user to play a sudoku game. The user should be able to pick a game from the our database and be able to play it. It will require the developers to manage different difficulty levels as well as storing games in the database. Another goal for this project is to allow the user to check how they are doing so far. This will require the developers to write testers that will test if the current numbers are valid or invalid. The major goal of this project is to completely solve the sudoku puzzle that the user inputs. Some problems that will arise are due to the time constraint. Brute force will take too long; however, if depth first search is used along with pruning, there is a good chance it will finish in time.
+	The system design is like how most games would be structured. The user can select play or solve at the very beginning. If the user decides to play a game, then they will be able to choose a difficulty they would like to play. There will be options for a hint; however, the hint function might not be released with the first version, since that isn’t the main priority with the project. There will be a check option to check if there are any errors in the current state of the puzzle as well as a solve option to solve the rest of the puzzle.  The following description is outlined in figure 2. The sequence diagram (Figure 3) illustrates the flow of logic when a user decides to play the game. Finally, the activity diagram (Figure 4) greatly outlines the dynamic aspects of the proposed sudoku game.
+The test plan for this project is based on the bottom-up approach. We, the developers, will be focusing on utility, reliability, robustness, and performance to ensure this project is functional and well as enjoyable to the user.
+
 
 
  
@@ -54,9 +60,7 @@ User & Whoever will be using the app  \\
  
 
 \section{Goals}
-
-This is the goals section. 
-
+There are a few major goals that needed to be accomplished in this project. The main overaching goal was to create an intuitive Sudoku game UI and combine it with a Sudoku game solving component. This goal was thus broken into smaller pieces: create a user friendly UI for a user to be able to play a Sudoku game and create a efficient and fast Sudoku solver to solve any given puzzle. This program also needed to have a few additional components as well. The program must include some sort of searching algorithm and because of the complexity of the problem, it also needs to include some sort of pruning technique to minimize the operations needed to solve the entire game. The program also have some sort of database component to store all the puzzles in along with the current puzzle the user is working on. Another major goal was to turn this program into a mobile app that will run on Android devices and eventually on other systems as well. These were the main goals of the project that helped drive the focus of the project and its workers.
 
  
 \section{Specific Requirements}
@@ -140,9 +144,6 @@ Provide an overview of the design, including diagrams, key design subsections, a
 
 \subsection{Realistic Constraints and Professional Standards}
 Identify and discuss realistic constraints on the problem, such that constraints may include economic, environmental, social, ethical, health and safety, manufacturability, policy issues, etc.
-\subsubsection{User Constraints}
-stuff \newline
-stuff \newline
 \begin{figure*}[ht]\centering
 	\includegraphics[width=2.0in]{./Figure/User_Constraint.JPG}
 	\caption{User constraints of the TESS System.}\label{fig:userconstraints}
@@ -181,7 +182,7 @@ stuff \newline
 \begin{figure*}[h!]
 	\centering
 	\includegraphics[width=5.0in]{./Figure/Sequence_Diagram.PNG}
-	\caption{Sequence diagram of the TESS system.}
+	\caption{Sequence diagram of the TESS system.\cite{UMLDoc}}
 	\label{fig:sequencediagram}
 \end{figure*}
 
