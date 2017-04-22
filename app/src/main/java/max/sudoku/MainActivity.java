@@ -13,12 +13,12 @@ import android.view.View;
 import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
-    static int dif,i,j,loops;
-    static Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
-    static Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,xquit,xcontinue,b=null;
-    static Button[][] grid = new Button[9][9];
-    static int[][] gridVal = new int[9][9];
-    static boolean solved = false;
+    int dif,i,j,loops;
+    Button s1play, s1solve,xback_s2, d1,d2,d3,d4,d5;
+    Button x1,x2,x3,x4,x5,x6,x7,x8,x9, xhint, xsolve,xdel,xcheck,xclear,xquit,xcontinue,b=null;
+    Button[][] grid = new Button[9][9];
+    int[][] gridVal = new int[9][9];
+    boolean solved = false;
     DatastoreFactory.DatastoreFactoryDbHelper mDbHelper = new DatastoreFactory.DatastoreFactoryDbHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
