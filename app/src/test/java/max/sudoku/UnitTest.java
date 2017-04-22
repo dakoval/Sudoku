@@ -139,4 +139,24 @@ public class UnitTest {
         }
         assertEquals(false,m.solveRecur(0,0));
     }
+
+    @Test
+    public void whiteBoxTestCorrect() throws Exception {
+        m.gridVal=new int[9][9];
+        String s = "102004070000902800009003004000240006000107000400068000200800700007501000080400109";
+        for(int i=0;i<9;i++)for(int j=0;j<9;j++){
+            m.gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
+        }
+        assertEquals(true,m.solveVertical() && m.solveHorizontal() && m.solveBox() && m.solveRecur(0,0));
+    }
+
+    @Test
+    public void whiteBoxTestNotCorrect() throws Exception {
+        m.gridVal=new int[9][9];
+        String s = "102014070000902800009003004000240006000107000400068000200800700007501000080400109";
+        for(int i=0;i<9;i++)for(int j=0;j<9;j++){
+            m.gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
+        }
+        assertEquals(false,m.solveVertical() && m.solveHorizontal() && m.solveBox() && m.solveRecur(0,0));
+    }
 }

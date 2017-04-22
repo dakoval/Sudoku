@@ -23,8 +23,8 @@
 
 \clearpage
 
-\section{Summary} 
-\todo{!!!} Have you ever played a Sudoku game that you weren’t able to solve? Have you spent hours trying to solve a specific puzzle, but something never quite added up? This is where we come in. with The Extraordinary Sudoku Solver, or as everyone in the lab calls it, TESS. TESS isn’t a normal sudoku game, it allows normal game play much like any sudoku game will; however, it has an added feature that makes it stand out from the rest of the apps currently on the market. TESS allows a user to input the given values from a sudoku puzzle and work its magic to find a solution for you. David and Joseph are currently working on TESS to get her up and running. 
+\section{Executive Summary} 
+\todo{Copied from previous paper} Have you ever played a Sudoku game that you weren’t able to solve? Have you spent hours trying to solve a specific puzzle, but something never quite added up? This is where we come in. with The Extraordinary Sudoku Solver, or as everyone in the lab calls it, TESS. TESS isn’t a normal sudoku game, it allows normal game play much like any sudoku game will; however, it has an added feature that makes it stand out from the rest of the apps currently on the market. TESS allows a user to input the given values from a sudoku puzzle and work its magic to find a solution for you. David and Joseph are currently working on TESS to get her up and running. 
 	The goal of TESS is to allow a user to play different sudoku games, much like most of the apps currently out there, but also allow a user to input a sudoku puzzle they have been working on elsewhere and get an instant solution. There are a few major problems that the developers are facing. One of the biggest problems in the time efficiency. TESS needs to be able to solve the entire game in under 5 seconds and even though that may seem like a long time, going through all the possible solutions won’t be fast enough. The developers are currently working on an algorithm that will work in O(N\^5) which is roughly 3 billion computations; however, with pruning and better algorithms, they will be able to get the algorithm to solve it much faster. Another major problem the young developers face is the allotted time to finish the project, they only have about a month to finish this massive project. They might be able to finish the project on time, if they dedicate enough time towards this project and focus on it more than the previous projects they worked on. 
 	The design will be rather simple much like any sudoku game out there; however, the color scheme will be different with a nice black and neon green coloring pattern. There will be a few buttons such as choosing to play a game as well as the ability to access the solver to solve a sudoku puzzle the user might have.
 	The goals of this project is to allow the user to play a sudoku game. The user should be able to pick a game from the our database and be able to play it. It will require the developers to manage different difficulty levels as well as storing games in the database. Another goal for this project is to allow the user to check how they are doing so far. This will require the developers to write testers that will test if the current numbers are valid or invalid. The major goal of this project is to completely solve the sudoku puzzle that the user inputs. Some problems that will arise are due to the time constraint. Brute force will take too long; however, if depth first search is used along with pruning, there is a good chance it will finish in time.
@@ -35,10 +35,10 @@ The test plan for this project is based on the bottom-up approach. We, the devel
 
  
 \section{Introduction}
- 
-Overall introduction
+ This section will provide the introduction to the final report document as well as roughly highlight the project on hand.
 \subsection{Purpose}
-\subsection{Scope}
+The purpose of this document is to give a detailed and overall description of The Extraordinary Sudoku Solver (TESS) app. The overall purpose of this project is to help the avid Sudoku players to have a platform to enjoy the game on as well as get help when they are unable to solve a puzzle. This app is intended to be used by both amateurs and professionals, as well as anyone in-between. This will be a free platform for anyone to have access to it as well as modify it in any way the like. Sudoku is an amazing game and the hopes of this project is to expand the entertainment and excitement of Sudoku to anyone willing to try this app.
+
 \subsection{Definitions, acronyms, and abbreviations}
 
 \begin{tabular}{ | m{8em} | m{24em}|  } 
@@ -95,7 +95,7 @@ This section will cover the non-functional requirements associated with the proj
 \textbf{ID:RQ7} \newline TITLE: Private Information \newline DESC: The app should not keep any personal information about the user. There app should not ask the user for any passwords. \newline \newline
 
 \subsection{Version}
-This is version 1.1 or v1.1, which is also the most current version of the system. Version 1.0 came out on the April 7, 2017; however, after test were conducted there were a few design flaws that needed to be worked around. Version 1.0 was not able to solve difficult Sudoku puzzles within the allotted and many of the beta testers were not pleased with this. After some thought v1.0 was pulled off the market and developers continued to improve the algorithm to solve the problem. In v1.1, the developers finally came up with a fast enough algorithm to solve it within the time limit. This new and updated version will be available on the market soon; however, it still remains in its early stages of development. 
+This is version 1.1 or v1.1, which is also the most current version of the system. Version 1.0 came out on the April 7, 2017; however, after tests were conducted there were a few design flaws that needed to be worked around. Version 1.0 was not able to solve difficult Sudoku puzzles within the allotted and many of the beta testers were not pleased with this. After some thought, v1.0 was pulled off the market and developers continued to improve the algorithm to solve the more difficult problems. In v1.1, the developers finally came up with a fast enough algorithm to solve it within the time limit. This new and updated version will be available on the market soon; however, it still remains in its early stages of development. 
 
 \subsection{System Model}
 This section will cover the general system model. This section includes the actors, use cases, use case diagram, prototyping and the traceability matrix.
@@ -125,7 +125,7 @@ Figure \ref{fig:usecasediagram} depicts the the use case diagram used by the app
 \end{figure*}
 
 \subsubsection{Traceability Matrix}
-The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows the priority weight of each use case based on the requirements that it meets. As per the figure, use case 9 had one of the highest priorities, which was consequently one of the most important use cases as well.
+The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows the priority weight of each use case based on the requirements that it meets. As per the figure, use case 9 had one of the highest priorities, which is consequently one of the most important use cases as well.
 \begin{figure*}[ht]\centering
 \includegraphics[width=4.0in]{./Figure/Traceability_Matrix.PNG}
 \caption{Traceability Matrix of the TESS System.}\label{fig:traceabilitymatrix}
@@ -187,6 +187,7 @@ This is the system inplementation section.
 Describe the technical details for each of the subsystems or a the system-level and
 provide sequence diagrams or station/activity diagrams for your system implementation.
 
+\iffalse
 \ref{fig:UI1}
 \begin{figure}[h!]
 	\begin{subfigure}{\linewidth}
@@ -209,11 +210,12 @@ provide sequence diagrams or station/activity diagrams for your system implement
 	\end{subfigure}
 	\caption{User interface of the TESS system.}
 \end{figure}
+\fi
 
 
 
 \section{System Testing}
-This is the system testing section.
+This section will describe the testing plan for TESS and the different tests that will be conducted on it. This section will also display the results of the tests.
 
 \subsection{Test Plan}
 Provide your test plan with unit testing (Black-box testing and White-box testing), integration testing (Top-down or bottom-up approach) and system testing.
