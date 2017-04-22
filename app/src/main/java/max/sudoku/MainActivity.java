@@ -232,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
-            gridVal[j][i]=Integer.parseInt(board.charAt(i*9+j)+"");
+            gridVal[i][j]=Integer.parseInt(board.charAt(i*9+j)+"");
         }
         setContentView(R.layout.s3);
         boardListener();
