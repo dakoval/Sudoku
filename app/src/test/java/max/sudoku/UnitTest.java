@@ -5,10 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class UnitTest {
-
+    MainActivity m=new MainActivity();
     @Test
     public void solveHorizontalCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "000000000000000000000000000000000000000000000000000000000000000000000000023456789";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -20,7 +19,6 @@ public class UnitTest {
 
     @Test
     public void solveHorizontalNotCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "000000000000000000000000000000000000000000000000000000000000000000000000033456789";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -31,7 +29,6 @@ public class UnitTest {
 
     @Test
     public void solveVerticalCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "000000000200000000300000000400000000500000000600000000700000000800000000900000000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -43,7 +40,6 @@ public class UnitTest {
 
     @Test
     public void solveVerticalNotCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "200000000200000000300000000400000000500000000600000000700000000800000000900000000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -54,7 +50,6 @@ public class UnitTest {
 
     @Test
     public void solveBoxCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "123000000456000000780000000000000000000000000000000000000000000000000000000000000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -66,7 +61,6 @@ public class UnitTest {
 
     @Test
     public void solveBoxNotCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "123000000456000000781000000000000000000000000000000000000000000000000000000000000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -77,7 +71,6 @@ public class UnitTest {
 
     @Test
     public void solveRecurCorrect0() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "000000000000000000000000000000000000000000000000000000000000000000000000000000000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -88,7 +81,6 @@ public class UnitTest {
 
     @Test
     public void solveRecurCorrect1() throws Exception {
-        MainActivity  m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "010020300004005060070000008006900070000100002030048000500006040000800106008000000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -99,7 +91,6 @@ public class UnitTest {
 
     @Test
     public void solveRecurCorrect2() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "002008050000040070480072000008000031600080005570000600000960048090020000030800900";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -110,7 +101,6 @@ public class UnitTest {
 
     @Test
     public void solveRecurCorrect3() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "102004070000902800009003004000240006000107000400068000200800700007501000080400109";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -121,7 +111,6 @@ public class UnitTest {
 
     @Test
     public void solveRecurCorrect4() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "000398000050010060000000000800000009120030045700000008000000000040020010000769000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -132,7 +121,6 @@ public class UnitTest {
 
     @Test
     public void solveRecurCorrect5() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "000427000060090080000000000900000008120030045500000007000000000040060030000715004";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -143,7 +131,6 @@ public class UnitTest {
 
     @Test
     public void solveRecurNotCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "400427000060090080000000000900000008120030045500000007000000000040060030000715000";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
@@ -154,29 +141,26 @@ public class UnitTest {
 
     @Test
     public void whiteBoxTestCorrect() throws Exception {
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "000427000060090080000000000900000008120030045500000007000000000040060030000715004";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             m.gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
         }
-        assertEquals(true,m.solveVertical() && m.solveHorizontal() && m.solveBox() && m.solveRecur(0,0));
+        assertEquals(true,m.solve());
     }
 
     @Test
     public void whiteBoxTestNotCorrect() throws Exception {
-        MainActivity  m=new MainActivity();
         m.gridVal=new int[9][9];
         String s = "102014070000902800009003004000240006000107000400068000200800700007501000080400109";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             m.gridVal[j][i]=Integer.parseInt(s.charAt(i*9+j)+"");
         }
-        assertEquals(false,m.solveVertical() && m.solveHorizontal() && m.solveBox() && m.solveRecur(0,0));
+        assertEquals(false,m.solve());
     }
 
     @Test
     public void performanceTest() throws Exception{
-        MainActivity m=new MainActivity();
         m.gridVal=new int[9][9];
        String s =    "800000000003600000070090200050007000000045700000100030001000069008500010090000400";
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){

@@ -521,8 +521,8 @@ public class MainActivity extends AppCompatActivity {
                 getValues();
                 xsolve.setBackgroundColor(Color.BLUE);
                 loops=0;
-                if(solveHorizontal() && solveVertical() && solveBox() && solveRecur(0,0)){
-                    writeToScreen();
+                if(solve()){
+                        writeToScreen();
                 }else{
                     clearScreen();
                     String s = "Given Sudoku Puzzle Could Not Be Solved.";
@@ -565,7 +565,9 @@ public class MainActivity extends AppCompatActivity {
         xhint.setOnClickListener(null);
         xclear.setOnClickListener(null);
     }
-
+    boolean solve(){
+        return solveHorizontal() && solveVertical() && solveBox() && solveRecur(0,0);
+    }
     void getValues(){
         for(int i=0;i<9;i++)for(int j=0;j<9;j++){
             final Button btn = grid[i][j];
