@@ -121,7 +121,7 @@ This section covers the use cases that are most prominant in the Sudoku app that
 \textbf{ID:UC9} \newline TITLE: Playing the game \newline ACTORS: Player \newline DESC: The Player enjoys playing a Sudoku game by clicking the buttons and entering the numbers that they might think will solve the puzzle. \newline
 \subsubsection{Use Case Diagram}
 Figure \ref{fig:usecasediagram} depicts the the use case diagram used by the app as well as the develops to design a proper system.
-\begin{figure*}[ht]\centering
+\begin{figure*}[h!]\centering
 	\includegraphics[width=4.0in]{./Figure/Usecase_Diagram.PNG}
 	\caption{Use case diagram of the TESS System.}\label{fig:usecasediagram}
 \end{figure*}
@@ -134,10 +134,14 @@ The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows 
 \end{figure*}
 
 \section{System Design}
-This is the system design section.
-\begin{figure*}[ht]
+This section will cover the overall design of the TESS system along with constaints and alternative designs to the system.
+
+\subsection{Desgin Overview} \todo{}
+Provide an overview of the design, including diagrams, key design subsections, and how they relate or connect to one another (e.g., Interaction, structural models).
+
+\begin{figure*}[h!]
 	\centering
-	\includegraphics[width=4.0in]{./Figure/Activity_Diagram.PNG}
+	\includegraphics[width=5.0in]{./Figure/Activity_Diagram.PNG}
 	\caption{Activity diagram of the TESS system.}\label{fig:activitydiagram}
 \end{figure*}
 
@@ -148,15 +152,13 @@ This is the system design section.
 	\caption{Sequence diagram of the TESS system.\cite{UMLDoc}}
 	\label{fig:sequencediagram}
 \end{figure*}
-\subsection{Desgin Overview}
-Provide an overview of the design, including diagrams, key design subsections, and how they relate or connect to one another (e.g., Interaction, structural models).
 
 \subsection{System Constraints and Professional Standards}
 
 The application design for Android smartphones requires to be implemented in Java. In addition to the programming language requirements, Android application development requires Android Studio IDE to be installed on the development computer. The IDE enables the developer to program and test the app on the same computer.\newline \newline
 The IDE itself requires the developer to have a basic understanding of Android application development. It also requires the developer to configure an Android Virtual Device to run and test the app that is currently being developed.\newline
 \newline
-*We have outlined the six system constraints of TESS below. 
+*We have outlined the seven system constraints of TESS below. 
 \newline
 \textbf{ID:C1} \newline TITLE: Memory Space \newline DESC: The app should have a small footprint. The entire app should take up less than 5MBs of memory, this is including with future updates as well.\newline\newline
 \textbf{ID:C2} \newline TITLE: Internet Connection for Updates\newline DESC: The app must have an internet connection established to be able to retrieve updated information from a master database. \newline\newline
@@ -164,11 +166,11 @@ The IDE itself requires the developer to have a basic understanding of Android a
 \textbf{ID:C4} \newline TITLE: Android Device Only \newline DESC: The system must work on Android Devices, specifically the Galaxy Note 5 first, the following versions will include other phone models.\newline\newline
 \textbf{ID:C5} \newline TITLE: Time to Solve \newline DESC: The app should take less than 5 seconds to output the solved Sudoku puzzle or report that it can't be solved.\newline\newline
 \textbf{ID:C6} \newline TITLE: Database Usage \newline DESC: The app must utilize some sort of database to hold the stored puzzles.\newline\newline
-
+\textbf{ID:C7} \newline TITLE: Typical Sudoku \newline DESC: The overall game must remain similar to the historic Sudoku game. Small features may be changed; however, the game must remain similar to the original game of Sudoku.\newline\newline
 
 
 \subsection{Alternative Designs and Design Choices}
-There were a few alternative designs at the developmental stages. Many were thrown out right away for not being realistic; however, there were a few designs that were considered in the early stages. Figure /ref{fig:altDesigns} highlights two of the alternative designs that were brought up for consideration. Alternative 1 was actually an entirely new concept. The developers were thinking of changing up the entire Sudoku game to be a 8x8 instead of the original 9x9. The idea was very interesting; however, there were issues that found. The game play wasn't well thought through and the same rules couldn't apply the new design. Since changing the standard rules was unconventional and might make users confused, this is where Alternative 2 came in. Alternative 2 is very similar to the current UI design that is being used, except for a few small features. Because groups of 3 rows are grouped together, the display might be hard for users to distinquish which column they are on. There weren't too many alternative designs because the nature of the project was to design a Sudoku game. The overall design is similar to most Sudoku games, except there might be a few extra features that others don't have. The client worked very closely with the developers, so the design features were almost always discussed before implementation to ensure the client received exactly what they wanted.
+There were a few alternative designs at the developmental stages. Many were thrown out right away for not being realistic; however, there were a few designs that were considered in the early stages. Figure /ref{fig:altDesigns} highlights two of the alternative designs that were brought up for consideration. Alternative 1 was actually an entirely new concept. The developers were thinking of changing up the entire Sudoku game to be a 8x8 instead of the original 9x9. The idea was very interesting; however, there were issues that found. The game play wasn't well thought through and the same rules couldn't apply the new design. This small change also violated Constraint 7, because the system was modified from the original Sudoku game setup. Since changing the standard rules was unconventional and might make users confused, this is where Alternative 2 came in. Alternative 2 is very similar to the current UI design that is being used, except for a few small features. Because groups of 3 rows are grouped together, the display might be hard for users to distinquish which column they are on. There weren't too many alternative designs because the nature of the project was to design a Sudoku game. The overall design is similar to most Sudoku games, except there might be a few extra features that others don't have. The client worked very closely with the developers, so the design features were almost always discussed before implementation to ensure the client received exactly what they wanted.
 \begin{figure}[ht]\centering\begin{subfigure}[b]{4.5cm}\frame{\includegraphics[width=4.5cm]{./Figure/alternative1.PNG}}\caption{Alternative 1}\label{Fig:alt1} \end{subfigure}
 %
 \hspace{1cm}
@@ -176,7 +178,7 @@ There were a few alternative designs at the developmental stages. Many were thro
 \begin{subfigure}[b]{4.5cm}\centering \frame{\includegraphics[width=4.5cm]{./Figure/alternative2.PNG}}\caption{Alternative 2} \label{Fig:alt2} \end{subfigure}\caption{Alternative Designs}\label{fig:altDesigns} \end{figure}
 
 
-\section{System Implementation}
+\section{System Implementation} \todo{}
 This is the system inplementation section.
 
 Describe the technical details for each of the subsystems or a the system-level and
@@ -230,7 +232,7 @@ This section will describe the test results in detail. The test results went as 
 \caption{Test: performanceTest()}\label{fig:performanceTest}
 \end{figure*}
 
-\section{Conclusions}
+\section{Conclusions} \todo{}
 This is the conclusions section.
 
 Overall summary of design methodologies, key creative approaches and potential
