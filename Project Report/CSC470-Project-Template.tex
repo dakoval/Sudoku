@@ -128,25 +128,30 @@ Figure \ref{fig:usecasediagram} depicts the the use case diagram used by the app
 
 \subsubsection{Traceability Matrix}
 The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows the priority weight of each use case based on the requirements that it meets. As per the figure, use case 9 had one of the highest priorities, which is consequently one of the most important use cases as well.
-\begin{figure*}[ht]\centering
+\begin{figure*}[h!]\centering
 \includegraphics[width=4.0in]{./Figure/Traceability_Matrix.PNG}
 \caption{Traceability Matrix of the TESS System.}\label{fig:traceabilitymatrix}
 \end{figure*}
 
 \section{System Design}
 This is the system design section.
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[width=4.0in]{./Figure/Activity_Diagram.PNG}
+	\caption{Activity diagram of the TESS system.}\label{fig:activitydiagram}
+\end{figure*}
 
+
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[width=5.0in]{./Figure/Sequence_Diagram.PNG}
+	\caption{Sequence diagram of the TESS system.\cite{UMLDoc}}
+	\label{fig:sequencediagram}
+\end{figure*}
 \subsection{Desgin Overview}
 Provide an overview of the design, including diagrams, key design subsections, and how they relate or connect to one another (e.g., Interaction, structural models).
 
-\subsection{Realistic Constraints and Professional Standards}
-Identify and discuss realistic constraints on the problem, such that constraints may include economic, environmental, social, ethical, health and safety, manufacturability, policy issues, etc.
-\begin{figure*}[ht]\centering
-	\includegraphics[width=2.0in]{./Figure/User_Constraint.JPG}
-	\caption{User constraints of the TESS System.}\label{fig:userconstraints}
-\end{figure*}
-
-\subsubsection{System Constraints}
+\subsection{System Constraints and Professional Standards}
 
 The application design for Android smartphones requires to be implemented in Java. In addition to the programming language requirements, Android application development requires Android Studio IDE to be installed on the development computer. The IDE enables the developer to program and test the app on the same computer.\newline \newline
 The IDE itself requires the developer to have a basic understanding of Android application development. It also requires the developer to configure an Android Virtual Device to run and test the app that is currently being developed.\newline
@@ -163,25 +168,13 @@ The IDE itself requires the developer to have a basic understanding of Android a
 
 
 \subsection{Alternative Designs and Design Choices}
-Describe alternative designs that were considered during execution of the project. Discuss how design choices were guided by constraints and other factors. E.g., architectural design models – Layered or Client-server and details shown using activity diagram as shown in Figure \ref{fig:activitydiagram} (Context model), sequence diagram (Interaction model), class diagram (Structural model).
+There were a few alternative designs at the developmental stages. Many were thrown out right away for not being realistic; however, there were a few designs that were considered in the early stages. Figure /ref{fig:altDesigns} highlights two of the alternative designs that were brought up for consideration. Alternative 1 was actually an entirely new concept. The developers were thinking of changing up the entire Sudoku game to be a 8x8 instead of the original 9x9. The idea was very interesting; however, there were issues that found. The game play wasn't well thought through and the same rules couldn't apply the new design. Since changing the standard rules was unconventional and might make users confused, this is where Alternative 2 came in. Alternative 2 is very similar to the current UI design that is being used, except for a few small features. Because groups of 3 rows are grouped together, the display might be hard for users to distinquish which column they are on. There weren't too many alternative designs because the nature of the project was to design a Sudoku game. The overall design is similar to most Sudoku games, except there might be a few extra features that others don't have. The client worked very closely with the developers, so the design features were almost always discussed before implementation to ensure the client received exactly what they wanted.
+\begin{figure}[ht]\centering\begin{subfigure}[b]{4.5cm}\frame{\includegraphics[width=4.5cm]{./Figure/alternative1.PNG}}\caption{Alternative 1}\label{Fig:alt1} \end{subfigure}
+%
+\hspace{1cm}
+%
+\begin{subfigure}[b]{4.5cm}\centering \frame{\includegraphics[width=4.5cm]{./Figure/alternative2.PNG}}\caption{Alternative 2} \label{Fig:alt2} \end{subfigure}\caption{Alternative Designs}\label{fig:altDesigns} \end{figure}
 
-\begin{figure*}[h!]
-	\centering
-	\includegraphics[width=5.0in]{./Figure/Activity_Diagram.PNG}
-	\caption{Activity diagram of the TESS system.}\label{fig:activitydiagram}
-\end{figure*}
-
-stuff \newline
-stuff \newline
-stuff \newline
-
-stuff \newline
-\begin{figure*}[h!]
-	\centering
-	\includegraphics[width=5.0in]{./Figure/Sequence_Diagram.PNG}
-	\caption{Sequence diagram of the TESS system.\cite{UMLDoc}}
-	\label{fig:sequencediagram}
-\end{figure*}
 
 \section{System Implementation}
 This is the system inplementation section.
