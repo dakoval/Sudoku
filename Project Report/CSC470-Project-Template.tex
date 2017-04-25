@@ -5,6 +5,7 @@
 \usepackage{subcaption}
 \usepackage{graphicx}
 
+
 \title{CSC470: Software Engineering Final Report\\ TESS: The Extraordinary Sudoku Solver}
 \author{Team: \#1 \\David Koval and Joseph Mammo\\Instructor: Dr. Ahyoung Lee}
 \date{ 4/24/17 \\ v1.1 }
@@ -119,16 +120,17 @@ This section covers the use cases that are most prominant in the Sudoku app that
 \textbf{ID:UC7} \newline TITLE: Solve the Puzzle \newline ACTORS: Player \newline DESC: The Player is tired of playing and wants to see the solution to the Sudoku puzzle, so they decided to tap the solve button to get all the answers. \newline \newline
 \textbf{ID:UC8} \newline TITLE: Clear the Board \newline ACTORS: Player \newline DESC: The Player decides to start a new puzzle, so the Player hits the clear button to erase everything on the board. \newline \newline
 \textbf{ID:UC9} \newline TITLE: Playing the game \newline ACTORS: Player \newline DESC: The Player enjoys playing a Sudoku game by clicking the buttons and entering the numbers that they might think will solve the puzzle. \newline
+
 \subsubsection{Use Case Diagram}
-Figure \ref{fig:usecasediagram} depicts the the use case diagram used by the app as well as the develops to design a proper system.
-\begin{figure*}[h!]\centering
+Figure \ref{fig:usecasediagram} depicts the the use case diagram used by the app as well as the develops to design a proper system. The diagram shows the interaction between the different users as well the correlation it has with the different use cases.
+\begin{figure*}[!]\centering
 	\includegraphics[width=4.0in]{./Figure/Usecase_Diagram.PNG}
 	\caption{Use case diagram of the TESS System.}\label{fig:usecasediagram}
 \end{figure*}
 
 \subsubsection{Traceability Matrix}
-The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows the priority weight of each use case based on the requirements that it meets. As per the figure, use case 9 had one of the highest priorities, which is consequently one of the most important use cases as well.
-\begin{figure*}[h!]\centering
+The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows the priority weight of each use case based on the requirements that it meets. As per the figure, use case 9 had one of the highest priorities, which is consequently one of the most important use cases as well. The diagram shows the different use cases and how the corrolate with the different requirements. It also helps depict which use cases are the most important based off the priority weights.
+\begin{figure*}[!]\centering
 \includegraphics[width=4.0in]{./Figure/Traceability_Matrix.PNG}
 \caption{Traceability Matrix of the TESS System.}\label{fig:traceabilitymatrix}
 \end{figure*}
@@ -136,10 +138,27 @@ The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows 
 \section{System Design}
 This section will cover the overall design of the TESS system along with constaints and alternative designs to the system.
 
-\subsection{Desgin Overview} \todo{}
+\subsection{Design Overview} \todo{}
 Provide an overview of the design, including diagrams, key design subsections, and how they relate or connect to one another (e.g., Interaction, structural models).
 
-\begin{figure*}[h!]
+This section will provide the the design overview of the TESS system. The system resemblance had to be close to what the game looks like in real life. So the developers had an idea with what they would be creating. Soon after the client game the developers a hand drawn image, Figure \ref{fig:initialDesign}, to help the developers out.
+
+
+\begin{figure}
+\hfill
+\subfigure[A]{\includegraphics[width=2.5in]{./Figure/initial_design.jpg}}\caption{Initial Design of TESS System} \label{fig:initialDesign}
+\hfill
+\subfigure[B]{\includegraphics[width=2.0in]{./Figure/currentBoard.PNG} } \caption{Current Design of TESS System}\label{fig:current}
+\hfill
+\end{figure}
+
+
+The initial design was a simple 9x9 board with a set of numbers near the bottom of the screen numbered 1 through 9. There were also a few buttons underneath those that resembled extra options; they were: quit, solve, hint, clear, delete, and check. At first the developers where unsure what those meant; however, the client soon clarified those up. The quit button was a command to quit the game, but there was also a hidden feature to that option. When the user would quit, that button would save the current board into the database to save the current state. 
+
+
+
+After much careful planning the deveopers were able to come up with a board similar to the one drawn as depicted in Figure \ref{fig:current}. The client had approved the design so the developers continued to work on the backend work based on the requirements. To make the development easier an activity diagram, as shown in Figure \ref{fig:activitydiagram}, was created to show the workflow of events. The diagrams shows the start node, which leads to the main UI page. From the main UI page the user could select either the play option or the solve option. If the solve option is selected, it goes to a select difficulty page and allows the user to select a difficulty. From there the user can either continue a puzzle or select a difficulty they would like to play. The puzzle is then loaded. The solver option would eventually lead to the same page as the other option, but the board would be clean. The diagram helps show the different options and well the possible routes a user could take while playing the game.   
+\begin{figure*}[ht]
 	\centering
 	\includegraphics[width=5.0in]{./Figure/Activity_Diagram.PNG}
 	\caption{Activity diagram of the TESS system.}\label{fig:activitydiagram}
