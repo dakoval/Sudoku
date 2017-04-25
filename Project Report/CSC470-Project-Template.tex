@@ -186,9 +186,7 @@ There were a few alternative designs at the developmental stages. Many were thro
 This section is about the overall system implementation of the TESS system. The activity diagram in Figure \ref{fig:activitydiagram} sets the overall overview of the implementation of the TESS system. Figure \ref{fig:sequencediagram} provides more details on the which system does specifically what. The two diagrams were the basis for the implementation part. Based on the 2 diagrams there would need to be at least 3 different user interfaces. 
 \begin{wrapfigure}{r}{.3\textwidth}\begin{center} \includegraphics[width=1.0in]{./Figure/layout.PNG}\caption{Different UIs}\label{fig:UIs} \end{center}
 \end{wrapfigure}
-Figure \ref{fig:UIs} depicts the different UIs that are needed in the system. Layout s1 is the main page where the user can select the two option whether to solve or play a game. Figure \ref{fig:MainPage} depicts how the main page is seen by the user.
-
-ddddddddddd dddddddddd dddddf asdf dddddddddd ddddddddd dddddddddddd ddddddddd ddddddddd dddddddddd dddddddddd dddddddd dddddddf asdf dddddddddd ddddddddd ddddd ddddddd ddddddddd ddddddddd dddddddddddd dddddddd dddddddddd dddddf asdf dddddddddd ddddddddd dddddd dddddd ddddddddd ddddddddd ddddddddd
+Figure \ref{fig:UIs} depicts the different UIs that are needed in the system. Layout s1 is the main page where the user can select the two option whether to solve or play a game. Figure \ref{fig:MainPage} depicts how the main page is seen by the user. When the user selects the play option that will direct them to the select difficulty page, shown in Figure \ref{fig:playPage}. From there they can either select one of the difficulties or they can select the continue option which will load the previous saved game. Once the select a difficulty, the game play page will display the board, as depicted in Figure \ref{fig:gamePlay}. If the user selects the solver option that will direct them to the game play screen; however, the complete board will be empty, as depicted in Figure \ref{fig:solverPage}.
 \begin{figure*}[h]
 	\centering
 	\includegraphics[width=5.0in]{./Figure/Sequence_Diagram.PNG}
@@ -203,7 +201,7 @@ ddddddddddd dddddddddd dddddf asdf dddddddddd ddddddddd dddddddddddd ddddddddd d
 \end{minipage}%
 \begin{minipage}{.5\textwidth}\centering \includegraphics[width=2.0in]{./Figure/Play.PNG} \captionof{figure}{Play Option}\label{fig:playPage}
 \end{minipage}%
-\par\medskip
+\par\medskip\par\medskip
 \begin{minipage}{.5\textwidth} \centering \includegraphics[width=2.0in]{./Figure/Solver.PNG}\captionof{figure}{Solver Option} \label{fig:solverPage}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}\centering \includegraphics[width=2.0in]{./Figure/Solve.PNG} \captionof{figure}{Game Play}\label{fig:gamePlay}
@@ -211,32 +209,7 @@ ddddddddddd dddddddddd dddddf asdf dddddddddd ddddddddd dddddddddddd ddddddddd d
 \end{figure}
 
 
-\iffalse
-\ref{fig:UI1}
-\begin{figure}[h!]
-	\begin{subfigure}{\linewidth}
-		\includegraphics[width=.3\linewidth]{./Figure/Check.PNG}\hfill
-		\includegraphics[width=.3\linewidth]{./Figure/Solve.PNG}
-		\caption{1}
-		\label{fig:UI1}
-	\end{subfigure}\par\medskip
-	\begin{subfigure}{\linewidth}
-		\includegraphics[width=.3\linewidth]{./Figure/Check.PNG}\hfill
-		\includegraphics[width=.3\linewidth]{./Figure/Solve.PNG}
-		\caption{2}
-		\label{fig:UI2}
-	\end{subfigure}\par\medskip
-	\begin{subfigure}{\linewidth}
-		\includegraphics[width=.3\linewidth]{./Figure/Check.PNG}\hfill
-		\includegraphics[width=.3\linewidth]{./Figure/Solve.PNG}
-		\caption{3}
-		\label{fig:UI3}
-	\end{subfigure}
-	\caption{User interface of the TESS system.}
-\end{figure}
-\fi
-
-
+This is
 
 \section{System Testing}
 This section will describe the testing plan for TESS and the different tests that will be conducted on it. This section will also display the results of the tests.
