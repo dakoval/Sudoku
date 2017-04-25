@@ -123,14 +123,14 @@ This section covers the use cases that are most prominant in the Sudoku app that
 
 \subsubsection{Use Case Diagram}
 Figure \ref{fig:usecasediagram} depicts the the use case diagram used by the app as well as the develops to design a proper system. The diagram shows the interaction between the different users as well the correlation it has with the different use cases.
-\begin{figure*}[!]\centering
+\begin{figure*}[h!]\centering
 	\includegraphics[width=4.0in]{./Figure/Usecase_Diagram.PNG}
 	\caption{Use case diagram of the TESS System.}\label{fig:usecasediagram}
 \end{figure*}
 
 \subsubsection{Traceability Matrix}
 The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows the priority weight of each use case based on the requirements that it meets. As per the figure, use case 9 had one of the highest priorities, which is consequently one of the most important use cases as well. The diagram shows the different use cases and how the corrolate with the different requirements. It also helps depict which use cases are the most important based off the priority weights.
-\begin{figure*}[!]\centering
+\begin{figure*}[h!]\centering
 \includegraphics[width=4.0in]{./Figure/Traceability_Matrix.PNG}
 \caption{Traceability Matrix of the TESS System.}\label{fig:traceabilitymatrix}
 \end{figure*}
@@ -139,38 +139,32 @@ The traceability matrix, as shown in Figure \ref{fig:traceabilitymatrix}, shows 
 This section will cover the overall design of the TESS system along with constaints and alternative designs to the system.
 
 \subsection{Design Overview} \todo{}
-Provide an overview of the design, including diagrams, key design subsections, and how they relate or connect to one another (e.g., Interaction, structural models).
-
 This section will provide the the design overview of the TESS system. The system resemblance had to be close to what the game looks like in real life. So the developers had an idea with what they would be creating. Soon after the client game the developers a hand drawn image, Figure \ref{fig:initialDesign}, to help the developers out.
 
-
-\begin{figure}
-\hfill
-\subfigure[A]{\includegraphics[width=2.5in]{./Figure/initial_design.jpg}}\caption{Initial Design of TESS System} \label{fig:initialDesign}
-\hfill
-\subfigure[B]{\includegraphics[width=2.0in]{./Figure/currentBoard.PNG} } \caption{Current Design of TESS System}\label{fig:current}
-\hfill
+\begin{figure}[h]
+\centering
+\begin{minipage}{.5\textwidth} \centering \includegraphics[width=2in]{./Figure/initial_design.jpg}\captionof{figure}{Initial Design of TESS System} \label{fig:initialDesign}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}\centering \includegraphics[width=2.0in]{./Figure/currentBoard.PNG} \captionof{figure}{Current Design of TESS System}\label{fig:current}
+\end{minipage}%
 \end{figure}
-
-
-The initial design was a simple 9x9 board with a set of numbers near the bottom of the screen numbered 1 through 9. There were also a few buttons underneath those that resembled extra options; they were: quit, solve, hint, clear, delete, and check. At first the developers where unsure what those meant; however, the client soon clarified those up. The quit button was a command to quit the game, but there was also a hidden feature to that option. When the user would quit, that button would save the current board into the database to save the current state. 
-
-
-
-After much careful planning the deveopers were able to come up with a board similar to the one drawn as depicted in Figure \ref{fig:current}. The client had approved the design so the developers continued to work on the backend work based on the requirements. To make the development easier an activity diagram, as shown in Figure \ref{fig:activitydiagram}, was created to show the workflow of events. The diagrams shows the start node, which leads to the main UI page. From the main UI page the user could select either the play option or the solve option. If the solve option is selected, it goes to a select difficulty page and allows the user to select a difficulty. From there the user can either continue a puzzle or select a difficulty they would like to play. The puzzle is then loaded. The solver option would eventually lead to the same page as the other option, but the board would be clean. The diagram helps show the different options and well the possible routes a user could take while playing the game.   
-\begin{figure*}[ht]
+\begin{figure*}[h]
 	\centering
-	\includegraphics[width=5.0in]{./Figure/Activity_Diagram.PNG}
+	\includegraphics[width=5in]{./Figure/Activity_Diagram.PNG}
 	\caption{Activity diagram of the TESS system.}\label{fig:activitydiagram}
 \end{figure*}
+The initial design was a simple 9x9 board with a set of numbers near the bottom of the screen numbered 1 through 9. There were also a few buttons underneath those that resembled extra options; they were: quit, solve, hint, clear, delete, and check. At first the developers where unsure what those meant; however, the client soon clarified those up. The quit button was a command to quit the game, but there was also a hidden feature to that option. When the user would quit, that button would save the current board into the database to save the current state. After much careful planning the deveopers were able to come up with a board similar to the one drawn as depicted in Figure \ref{fig:current}. The client had approved the design so the developers continued to work on the backend work based on the requirements. 
 
-
-\begin{figure*}[ht]
+\begin{figure*}[h]
 	\centering
 	\includegraphics[width=5.0in]{./Figure/Sequence_Diagram.PNG}
 	\caption{Sequence diagram of the TESS system.\cite{UMLDoc}}
 	\label{fig:sequencediagram}
 \end{figure*}
+To make the development easier an activity diagram, as shown in Figure \ref{fig:activitydiagram}, was created to show the workflow of events. The diagrams shows the start node, which leads to the main UI page. From the main UI page the user could select either the play option or the solve option. If the solve option is selected, it goes to a select difficulty page and allows the user to select a difficulty. From there the user can either continue a puzzle or select a difficulty they would like to play. The puzzle is then loaded. The solver option would eventually lead to the same page as the other option, but the board would be clean. The diagram helps show the different options and well the possible routes a user could take while playing the game. From that diagram, it is visible that there need to be at least 3 main UI pages as well as some of the capabilities such as solve and hint. Another diagram, Figure \ref{fig:sequencediagram}, shows the sequence of events. This diagram shows what happens in the background. Once a user selects the play game option, that request is sent to the game database and initializes the game UI. The there a game checker class which checks the the current game as well as a game solver class. With the help of these diagrams depicting the flow of data, the developers were able to come up with a sophisticated design of TESS.
+
+
+
 
 \subsection{System Constraints and Professional Standards}
 
