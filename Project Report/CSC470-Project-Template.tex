@@ -208,8 +208,15 @@ Figure \ref{fig:UIs} depicts the different UIs that are needed in the system. La
 \end{minipage}%
 \end{figure}
 
+Those previous figures depict the different UIs that are currently implemented. There are two main classes within the TESS system. One is the database class and the other one is the main class. The database builds the database on the users end and holds the different puzzles the app supports. The other class is the main class. There are a few different components to the main class, even though this class could have been broken up into smaller classes, due to the nature of the project, it all remained in the same class. Had the project been bigger, the class would have been separated into smaller classes. The main class houses the code creates the database class as well as inputs data into the database. It also contains the listeners to all the buttons. The reason the developers decided to leave every in one main class was because of all the listeners and at times some would need to be turned off and at other times, other would need to be. So everything was left in the main class to have easier access to all these listeners. There are also 2 other subclasses technically within the main page as well. There is the check class which checks the current board and if all the values are valid. Then there is the solver class, this is the bulk of the project. The subclass takes the current board and does a depth first search through the different possibilities to find the right one. This is only possible because of a pruning technique that is applied to the algorithm. 
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=5.0in]{./Figure/Class_Diagram.PNG}
+	\caption{Class Diagram for TESS.}
+	\label{fig:classdiagram}
+\end{figure*}
 
-This is
+The different classes in the TESS system are depicted in Figure \ref{fig:classdiagram}. The class diagram breaks the different class down and includes all the different variables and methods located in each class.
 
 \section{System Testing}
 This section will describe the testing plan for TESS and the different tests that will be conducted on it. This section will also display the results of the tests.
