@@ -1,5 +1,3 @@
-ReadMe:
-
 ### Name: TESS: The Extraordinary Sudoku Solver ###
 ### Version: 1.1 | 4/22/17 ###
 ### System Requirements: Galaxy Note 5, Android Studio, Any Android Phone(may have compatibility issues) ### 
