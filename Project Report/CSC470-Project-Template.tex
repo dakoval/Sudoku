@@ -27,17 +27,17 @@
 
 \section{Executive Summary} 
 
-Have you ever played a Sudoku game that you weren’t able to solve? Have you spent hours trying to solve a specific puzzle, but something never quite added up? This is where The Extraordinary Sudoku Solver (TESS) comes in; an Android application developed by David Koval and Joseph Mammo, TESS isn’t just a normal sudoku game: it allows normal game play and has an added feature that makes it stand out from the rest of the Android apps currently on the Play Store – solving any given Sudoku puzzles***. \newline \newline
+Have you ever played a Sudoku game that you weren’t able to solve? Have you spent hours trying to solve a specific puzzle, but something never quite added up? This is where The Extraordinary Sudoku Solver (TESS) comes in; an Android application developed by David Koval and Joseph Mammo, TESS isn’t just a normal sudoku game: it allows normal game play and has an added feature that makes it stand out from the rest of the Android apps currently on the Play Store. \newline \newline
 The goal of TESS is to allow a user to play different sudoku games, much like most of the apps currently out there, but also allow a user to input a sudoku puzzle they have been working on elsewhere and get an instant solution. TESS allows the user to select difficulty level, ranging from 1 – 5 (easy to hard), and play a regular 9x9 sudoku game in an intuitive interface. By utilizing a depth search with pruning algorithm, our game solves most Sudoku puzzles in under 5 seconds. Furthermore, TESS lets the user check their boards and highlights any invalid inputs.\newline \newline
 With a black and neon green coloring design, TESS simulates a hacker experience; and with its intuitive button design, TESS makes it tremendously easy to choose, play and/or solve sudoku games with any difficulty levels. The user can select play or solve at the very beginning. If the user decides to play a game, then they will be able to choose a difficulty they would like to play. During game play. The user is provided with a hint button (currently under development) to get hint to solve the puzzle; a check button to check status of their board; a solve button to solve the rest of the puzzle; delete and clear buttons to remove a single value and remove all values on the board respectively; the user can select the quit option to exit the current board and return to the main menu. After the quit sequence is initiated, TESS saves the current progress of the user in a database so the user can resume at any time. The following description is outlined in Figure \ref{fig:current}. The sequence diagram (Figure \ref{fig:sequencediagram}) illustrates the flow of logic when a user decides to play the game. Finally, the activity diagram (Figure \ref{fig:activitydiagram}) greatly outlines the dynamic aspects of the proposed sudoku game.  \newline \newline
 The test plan for this project is based on the bottom-up approach. We, the developers, focused on utility, reliability, robustness, and performance to ensure this project is functional and well as enjoyable to the user. We performed 1 White-box test where each method is directly dependent on the other to produce the correct solution and 1 other White-box test to perform the same test on invalid input. Due to the nature of the project, the integration testing is directly associated with the unit testing. \newline \newline
-To sum up, TESS allows a user to play and solve a regular 9x9 sudoku game. The game provides level based Sudoku games and saves the progress of the puzzle upon quitting so the user can resume their game. Because of its intuitive design, solving functionality and all-inclusive bottom up testing approach, TESS stands out from most Sudoku apps that are currently published on the Google Play Store. \newline \newline
-As a future work, we plan to add more challenging puzzles based on different difficulty levels; improve the current solving feature by implementing the paper-and-pen algorithm; and open-source the project so anyone can adapt our code and add more features to TESS. 
+As a future work, we plan to add more challenging puzzles based on different difficulty levels; improve the current solving feature by implementing a more efficient algorithm; and open-source the project so anyone can adapt our code and add more features to TESS. \newline \newline
+To sum up, TESS allows a user to play and solve a regular 9x9 sudoku game. The game provides level based Sudoku games and saves the progress of the puzzle upon quitting so the user can resume their game. Because of its intuitive design, solving functionality and all-inclusive bottom up testing approach, TESS stands out from most Sudoku apps that are currently published on the Google Play Store. 
+
 
  
 \section{Introduction}
-This documentation is in support of The Extraordinary Sudoku Solver (TESS) application implemented in Android Studio using Java programming language on a Windows operating system. The document assumes that the reader is already familiar with using Android Studio programming in Java. \newline \newline
-The intent of this documentation is to provide an in-depth explanation of the requirement specifications, system design, implementation and testing of TESS. \todo{ [More info]} \newline \newline
+This documentation is in support of The Extraordinary Sudoku Solver (TESS) application implemented in Android Studio using Java programming language on a Windows operating system. The document assumes that the reader is already familiar with using Android Studio programming in Java. The intent of this documentation is to provide an in-depth explanation of the requirement specifications, system design, implementation and testing of TESS. \newline \newline
 The documentation starts with stating the purpose of the documentation and outlining the definitions, acronyms and abbreviations used in the documentation. In the third section, the documentation states the goals of TESS followed by the functional and non-functional requirements of the Android application. Then the documentation unpacks the system model of TESS through a use case diagram and a traceability matrix. Finally, system design and implementation are presented at the last two sections of this document. 
 
 \subsection{Purpose}
@@ -240,15 +240,20 @@ This section will describe the test results in detail. The test results went as 
 \begin{figure*}[ht]\centering
 \includegraphics[width=4.0in]{./Figure/performance_test.PNG}
 \caption{Test: performanceTest()}\label{fig:performanceTest}
-\end{figure*}
+\end{figure*} 
+\begin{figure*}[ht]\centering
+	\includegraphics[width=1.9in]{./Figure/Unsolvable_Puzzle.PNG}
+	\caption{Test: invalid/unsolvable sudoku puzzle notification)}\label{fig:unsolvablePuzzleTest}
+\end{figure*} 
+
+\section {Future Work}
+As a future work, we plan to add more challenging puzzles based on different difficulty levels; improve the current solving feature by implementing the paper-and-pen algorithm; and open-source the project so anyone can adapt our code and add more features to TESS. 
+
+\section{Conclusions} 
+
+In conclusion, TESS enables the user to play classic 9x9 sudoku games based on five difficulty levels. A user can play a game by selecting “Play” as outlines on Figure \ref{fig:MainPage} and either select difficulty level (see Figure \ref{fig:playPage}) or press “Continue” to continue an in-progress game. In addition, TESS can also solve a given sudoku puzzle. The user needs to select “Solve” as drafted on Figure \ref{fig:MainPage}, input the values on the game user interface, and select “Solve” to a solution to their input. This functionality extends to the game play as well; a user can solve an in-progress game by selecting “Solve” in the game UI. If the puzzle cannot be solved, however, the user will get a text that reads “GIVEN SUDOKU PUZZLE COULD NOT BE SOLVED” displayed on the board as shown on Figure \ref{fig:unsolvablePuzzleTest}. Not to mention, our application automatically saves the current progress of the user on a database entry, allowing users to resume their game even after closing the app. TESS is truly a dream application for an avid Sudoku gamer.
 
 
-\section{Conclusions} \todo{}
-This is the conclusions section.
-
-Overall summary of design methodologies, key creative approaches and potential
-contribution/impact. \cite{BobCarpenter2013}
-\cite{UMLDoc}
 
 \bibliographystyle{IEEEtran}
 \bibliography{Bibliography}
